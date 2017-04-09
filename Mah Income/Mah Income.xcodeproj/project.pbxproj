@@ -12,6 +12,7 @@
 		CD6F3CF21E99E9EE005B42A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF01E99E9EE005B42A5 /* Main.storyboard */; };
 		CD6F3CF41E99E9EE005B42A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF31E99E9EE005B42A5 /* Assets.xcassets */; };
 		CD6F3CF71E99E9EE005B42A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF51E99E9EE005B42A5 /* LaunchScreen.storyboard */; };
+		CD6F3D001E99EACA005B42A5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD6F3CF31E99E9EE005B42A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6F3CF61E99E9EE005B42A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6F3CF81E99E9EE005B42A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		CD6F3CEB1E99E9EE005B42A5 /* Mah Income */ = {
 			isa = PBXGroup;
 			children = (
+				CD6F3CFE1E99EABB005B42A5 /* Custom View */,
 				CD6F3CEC1E99E9EE005B42A5 /* AppDelegate.swift */,
 				CD6F3CEE1E99E9EE005B42A5 /* ViewController.swift */,
 				CD6F3CF01E99E9EE005B42A5 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				CD6F3CF81E99E9EE005B42A5 /* Info.plist */,
 			);
 			path = "Mah Income";
+			sourceTree = "<group>";
+		};
+		CD6F3CFE1E99EABB005B42A5 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6F3D001E99EACA005B42A5 /* NumberView.swift in Sources */,
 				CD6F3CEF1E99E9EE005B42A5 /* ViewController.swift in Sources */,
 				CD6F3CED1E99E9EE005B42A5 /* AppDelegate.swift in Sources */,
 			);
