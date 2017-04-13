@@ -12,7 +12,9 @@
 		CD6F3CF21E99E9EE005B42A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF01E99E9EE005B42A5 /* Main.storyboard */; };
 		CD6F3CF41E99E9EE005B42A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF31E99E9EE005B42A5 /* Assets.xcassets */; };
 		CD6F3CF71E99E9EE005B42A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF51E99E9EE005B42A5 /* LaunchScreen.storyboard */; };
-		CD6F3D001E99EACA005B42A5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */; };
+		CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */; };
+		CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC493FA1E9ED0C10091E58F /* Constant.swift */; };
+		CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC493FE1E9ED4280091E58F /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		CD6F3CF31E99E9EE005B42A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6F3CF61E99E9EE005B42A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6F3CF81E99E9EE005B42A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		CDC493FA1E9ED0C10091E58F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CDC493FE1E9ED4280091E58F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		CD6F3CEB1E99E9EE005B42A5 /* Mah Income */ = {
 			isa = PBXGroup;
 			children = (
+				CDC493FD1E9ED41E0091E58F /* Logger */,
+				CDC493F91E9ED0B80091E58F /* Utils */,
 				CD6F3CFE1E99EABB005B42A5 /* Custom View */,
 				CD6F3CEC1E99E9EE005B42A5 /* AppDelegate.swift */,
 				CD6F3CEE1E99E9EE005B42A5 /* ViewController.swift */,
@@ -70,9 +76,25 @@
 		CD6F3CFE1E99EABB005B42A5 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
-				CD6F3CFF1E99EACA005B42A5 /* NumberView.swift */,
+				CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */,
 			);
 			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		CDC493F91E9ED0B80091E58F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDC493FA1E9ED0C10091E58F /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDC493FD1E9ED41E0091E58F /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CDC493FE1E9ED4280091E58F /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6F3D001E99EACA005B42A5 /* NumberView.swift in Sources */,
+				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
+				CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */,
 				CD6F3CEF1E99E9EE005B42A5 /* ViewController.swift in Sources */,
 				CD6F3CED1E99E9EE005B42A5 /* AppDelegate.swift in Sources */,
+				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +336,7 @@
 				CD6F3CFD1E99E9EE005B42A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
