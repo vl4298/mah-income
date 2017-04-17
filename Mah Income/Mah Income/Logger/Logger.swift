@@ -7,11 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class Logger {
   
   static func normal(_ content: String) {
     print(content)
+  }
+  
+  static func normal(_ size: CGSize) {
+    print(size)
   }
   
 }
