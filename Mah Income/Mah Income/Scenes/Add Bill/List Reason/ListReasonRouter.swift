@@ -12,7 +12,7 @@ class ListReasonRouter {
   
   weak var viewController: ListReasonViewController!
   
-  func presentAddReasonScene() {
+  func addAddReasonScene() {
     let addReasonVC = viewController.storyboard!.instantiateViewController(type: AddReasonViewController.self)!
     AddReasonConfigurator.sharedInstance.configure(viewController: addReasonVC)
     

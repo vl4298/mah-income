@@ -35,12 +35,6 @@ class MM3DButton: UIButton {
     }
   }
   
-  @IBInspectable var cornerRadius: CGFloat = 10.0 {
-    didSet {
-      layer.cornerRadius = cornerRadius
-    }
-  }
-  
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setupView()

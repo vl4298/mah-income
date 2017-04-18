@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-    window?.makeKeyAndVisible()
-    
-    let listReasonVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: ListReasonViewController.self)!
-    ListReasonConfigurator.sharedInstance.configure(viewController: listReasonVC)
-    
-    window?.rootViewController = listReasonVC
+//    window?.makeKeyAndVisible()
+//    
+//    let listReasonVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: ListReasonViewController.self)!
+//    ListReasonConfigurator.sharedInstance.configure(viewController: listReasonVC)
+//    
+//    window?.rootViewController = listReasonVC
     
     return true
   }

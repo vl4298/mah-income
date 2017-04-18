@@ -22,4 +22,13 @@ struct TestData {
     ]
   }
   
+  struct CategoryReason {
+    static let value = [
+      CategoryReasonViewModel(name: "Food"),
+      CategoryReasonViewModel(name: "Clothes"),
+      CategoryReasonViewModel(name: "Ventra"),
+      CategoryReasonViewModel(name: "Book + Tutorial")
+    ]
+  }
+  
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="en3-y4-Lrl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Add Payment View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mah_Income" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddPaymentViewController" customModule="Mah_Income" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQl-ON-TH2" customClass="MM3DButton" customModule="Mah_Income" customModuleProvider="target">
-                                <rect key="frame" x="16" y="84" width="343" height="60.5"/>
+                                <rect key="frame" x="16" y="145.5" width="343" height="44.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -62,10 +62,10 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZw-1b-n1Y">
-                                <rect key="frame" x="16" y="160.5" width="343" height="83"/>
+                                <rect key="frame" x="16" y="206" width="343" height="66.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-hN-6UO">
-                                        <rect key="frame" x="8" y="8" width="327" height="67"/>
+                                        <rect key="frame" x="8" y="8" width="327" height="50.5"/>
                                         <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="70"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -80,13 +80,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mxH-LQ-fRn">
-                                <rect key="frame" x="24" y="273.5" width="327" height="373.5"/>
+                                <rect key="frame" x="24" y="292.5" width="327" height="364.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="P8c-xd-WAY">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="84"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="81"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-NP-Une" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980392156861" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fs6-NP-Une" secondAttribute="height" multiplier="1:1" id="it2-2x-foc"/>
@@ -94,7 +94,7 @@
                                                 <state key="normal" title="7"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-xI-ice" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="121.5" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="80.5" height="81"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Qa1-xI-ice" secondAttribute="height" multiplier="1:1" id="yQM-QY-1F6"/>
@@ -102,7 +102,7 @@
                                                 <state key="normal" title="8"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-L5-SaG" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="243" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="246" y="0.0" width="81" height="81"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TO2-L5-SaG" secondAttribute="height" multiplier="1:1" id="Vg5-cz-dFy"/>
@@ -112,24 +112,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hZh-Ve-3Sq">
-                                        <rect key="frame" x="0.0" y="97" width="327" height="84"/>
+                                        <rect key="frame" x="0.0" y="94" width="327" height="81.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5K-YE-4th" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="I5K-YE-4th" secondAttribute="height" multiplier="1:1" id="9Dj-2y-Lwp"/>
                                                 </constraints>
                                                 <state key="normal" title="6"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-Pi-QKh" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="121.5" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="z5d-Pi-QKh" secondAttribute="height" multiplier="1:1" id="b7D-Xz-o8w"/>
                                                 </constraints>
                                                 <state key="normal" title="5"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjZ-r7-6sF" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="243" y="0.0" width="84" height="84"/>
+                                                <rect key="frame" x="245" y="0.0" width="82" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kjZ-r7-6sF" secondAttribute="height" multiplier="1:1" id="idL-16-fp5"/>
                                                 </constraints>
@@ -138,24 +138,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zIs-SD-d48">
-                                        <rect key="frame" x="0.0" y="194" width="327" height="83"/>
+                                        <rect key="frame" x="0.0" y="188.5" width="327" height="81.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgU-EG-4xI" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GgU-EG-4xI" secondAttribute="height" multiplier="1:1" id="ayY-7X-FGn"/>
                                                 </constraints>
                                                 <state key="normal" title="3"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4j-l7-e9R" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="122" y="0.0" width="83" height="83"/>
+                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="N4j-l7-e9R" secondAttribute="height" multiplier="1:1" id="gfK-Zj-avO"/>
                                                 </constraints>
                                                 <state key="normal" title="2"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-i0-Qzo" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="243.5" y="0.0" width="83.5" height="83"/>
+                                                <rect key="frame" x="245.5" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Vd1-i0-Qzo" secondAttribute="height" multiplier="1:1" id="4fn-nS-wIB"/>
                                                 </constraints>
@@ -164,24 +164,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Obe-4X-0ZZ">
-                                        <rect key="frame" x="0.0" y="290" width="327" height="83.5"/>
+                                        <rect key="frame" x="0.0" y="283" width="327" height="81.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXA-lV-dJM" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pXA-lV-dJM" secondAttribute="height" multiplier="1:1" id="DNN-Z6-FW3"/>
                                                 </constraints>
                                                 <state key="normal" title="0"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCa-kd-c6N" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="122" y="0.0" width="83" height="83.5"/>
+                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OCa-kd-c6N" secondAttribute="height" multiplier="1:1" id="SPV-ei-Duj"/>
                                                 </constraints>
                                                 <state key="normal" title="."/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k31-j9-aCO" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="243.5" y="0.0" width="83.5" height="83.5"/>
+                                                <rect key="frame" x="245.5" y="0.0" width="81.5" height="81.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="k31-j9-aCO" secondAttribute="height" multiplier="1:1" id="8PS-km-ctm"/>
                                                 </constraints>
@@ -198,36 +198,91 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food: Bale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-29-AHo">
-                                <rect key="frame" x="20.5" y="89.5" width="333" height="50.5"/>
+                                <rect key="frame" x="20.5" y="151" width="333" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l7I-7T-KVn">
+                                <rect key="frame" x="0.0" y="74" width="375" height="51.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mZw-rg-gfZ">
+                                    <size key="itemSize" width="261" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gfb-7a-sWr" customClass="CategoryCollectionViewCell" customModule="Mah_Income" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="261" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="261" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7V-yS-b0g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="261" height="50"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.30196078431372547" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="P7V-yS-b0g" secondAttribute="bottom" id="Q2A-IN-6gI"/>
+                                            <constraint firstAttribute="trailing" secondItem="P7V-yS-b0g" secondAttribute="trailing" id="QbT-Xh-PL6"/>
+                                            <constraint firstItem="P7V-yS-b0g" firstAttribute="top" secondItem="gfb-7a-sWr" secondAttribute="top" id="RLH-uI-kLB"/>
+                                            <constraint firstItem="P7V-yS-b0g" firstAttribute="leading" secondItem="gfb-7a-sWr" secondAttribute="leading" id="rdS-9f-MBf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="P7V-yS-b0g" id="FMj-A2-FZe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jzo-29-AHo" firstAttribute="width" secondItem="TQl-ON-TH2" secondAttribute="width" constant="-10" id="509-Rh-uHl"/>
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AY6-fg-sNv"/>
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B9a-Pr-SMn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mxH-LQ-fRn" secondAttribute="bottom" constant="20" id="CMX-zY-zvo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mxH-LQ-fRn" secondAttribute="bottom" constant="10" id="CMX-zY-zvo"/>
+                            <constraint firstItem="TQl-ON-TH2" firstAttribute="top" secondItem="l7I-7T-KVn" secondAttribute="bottom" constant="20" id="CsP-zc-QpT"/>
                             <constraint firstItem="Dne-d3-7PM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EKC-FG-Dvh"/>
                             <constraint firstAttribute="trailing" secondItem="Dne-d3-7PM" secondAttribute="trailing" id="HvR-fh-edt"/>
-                            <constraint firstItem="TQl-ON-TH2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:11" id="MA3-ZS-t9j"/>
+                            <constraint firstItem="l7I-7T-KVn" firstAttribute="top" secondItem="Dne-d3-7PM" secondAttribute="bottom" constant="10" id="KTi-OS-FcX"/>
+                            <constraint firstItem="TQl-ON-TH2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:15" id="MA3-ZS-t9j"/>
                             <constraint firstItem="jzo-29-AHo" firstAttribute="centerX" secondItem="TQl-ON-TH2" secondAttribute="centerX" id="MG8-9T-1N6"/>
-                            <constraint firstItem="TQl-ON-TH2" firstAttribute="top" secondItem="Dne-d3-7PM" secondAttribute="bottom" constant="20" id="SDJ-Ka-Zia"/>
+                            <constraint firstAttribute="trailing" secondItem="l7I-7T-KVn" secondAttribute="trailing" id="SJb-nh-vAv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TQl-ON-TH2" secondAttribute="trailing" id="TOI-Ud-Peq"/>
-                            <constraint firstItem="XZw-1b-n1Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:8" id="bDb-Eg-KRk"/>
+                            <constraint firstItem="XZw-1b-n1Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:10" id="bDb-Eg-KRk"/>
                             <constraint firstItem="jzo-29-AHo" firstAttribute="height" secondItem="TQl-ON-TH2" secondAttribute="height" constant="-10" id="cL6-E4-IyZ"/>
                             <constraint firstItem="TQl-ON-TH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cyk-wU-bhq"/>
                             <constraint firstItem="jzo-29-AHo" firstAttribute="centerY" secondItem="TQl-ON-TH2" secondAttribute="centerY" id="dq6-sx-l15"/>
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="top" secondItem="TQl-ON-TH2" secondAttribute="bottom" constant="16" id="feZ-nI-lTY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mxH-LQ-fRn" secondAttribute="trailing" constant="8" id="gHd-zp-uhw"/>
                             <constraint firstItem="mxH-LQ-fRn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="ivi-bZ-E9z"/>
+                            <constraint firstItem="l7I-7T-KVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tq0-fr-CJ9"/>
                             <constraint firstItem="Dne-d3-7PM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uMP-Fo-FiR"/>
-                            <constraint firstItem="mxH-LQ-fRn" firstAttribute="top" secondItem="XZw-1b-n1Y" secondAttribute="bottom" constant="30" id="upH-UA-Nn4"/>
+                            <constraint firstItem="mxH-LQ-fRn" firstAttribute="top" secondItem="XZw-1b-n1Y" secondAttribute="bottom" constant="20" id="upH-UA-Nn4"/>
+                            <constraint firstItem="l7I-7T-KVn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:13" id="wju-aK-Od2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lmT-Yi-NmK"/>
+                    <connections>
+                        <outlet property="collectionView" destination="l7I-7T-KVn" id="Omy-sY-rbL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,7 +325,10 @@
                                                             <real key="value" value="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                            <color key="value" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="0.0" green="0.41176470588235292" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
@@ -416,7 +474,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="0.0" height="5"/>
@@ -441,7 +499,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="0.0" height="5"/>

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD0AE3A21EA45C10007A3798 /* ListReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A11EA45C10007A3798 /* ListReasonViewController.swift */; };
-		CD0AE3A41EA45C85007A3798 /* ReasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A31EA45C85007A3798 /* ReasonTableViewCell.swift */; };
-		CD0AE3A61EA45DD4007A3798 /* ReasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A51EA45DD4007A3798 /* ReasonViewModel.swift */; };
 		CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A71EA46514007A3798 /* PassthroughView.swift */; };
 		CD583C611EA050CD000D624A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C601EA050CD000D624A /* UIColor.swift */; };
 		CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C621EA05C83000D624A /* MM3DButton.swift */; };
@@ -20,11 +17,22 @@
 		CD6F3CF71E99E9EE005B42A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F3CF51E99E9EE005B42A5 /* LaunchScreen.storyboard */; };
 		CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */; };
 		CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2AA1EA53E4D004CC7F3 /* PaddingTextField.swift */; };
-		CD77E2AD1EA54236004CC7F3 /* ListReasonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2AC1EA54236004CC7F3 /* ListReasonRouter.swift */; };
-		CD77E2AF1EA544AD004CC7F3 /* AddReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2AE1EA544AD004CC7F3 /* AddReasonViewController.swift */; };
-		CD77E2B11EA54535004CC7F3 /* ListReasonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B01EA54535004CC7F3 /* ListReasonConfigurator.swift */; };
-		CD77E2B31EA5486F004CC7F3 /* AddReasonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B21EA5486F004CC7F3 /* AddReasonRouter.swift */; };
-		CD77E2B51EA548E9004CC7F3 /* AddReasonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B41EA548E9004CC7F3 /* AddReasonConfigurator.swift */; };
+		CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B71EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift */; };
+		CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */; };
+		CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */; };
+		CD77E2BE1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */; };
+		CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */; };
+		CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C11EA56DBA004CC7F3 /* UIView.swift */; };
+		CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C41EA5930F004CC7F3 /* ListReasonConfigurator.swift */; };
+		CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C51EA5930F004CC7F3 /* ListReasonRouter.swift */; };
+		CD77E2CB1EA5930F004CC7F3 /* ListReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C61EA5930F004CC7F3 /* ListReasonViewController.swift */; };
+		CD77E2CC1EA5930F004CC7F3 /* ReasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C71EA5930F004CC7F3 /* ReasonTableViewCell.swift */; };
+		CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C81EA5930F004CC7F3 /* ReasonViewModel.swift */; };
+		CD77E2D21EA5934F004CC7F3 /* AddReasonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2CF1EA5934F004CC7F3 /* AddReasonConfigurator.swift */; };
+		CD77E2D31EA5934F004CC7F3 /* AddReasonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D01EA5934F004CC7F3 /* AddReasonRouter.swift */; };
+		CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D11EA5934F004CC7F3 /* AddReasonViewController.swift */; };
+		CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D51EA593C9004CC7F3 /* AddPaymentRouter.swift */; };
+		CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */; };
 		CD9381AB1EA313540031D554 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381AA1EA313540031D554 /* ContainerViewController.swift */; };
 		CD9381AE1EA313930031D554 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381AD1EA313930031D554 /* MenuViewController.swift */; };
 		CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B11EA314870031D554 /* HomeViewController.swift */; };
@@ -40,9 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD0AE3A11EA45C10007A3798 /* ListReasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonViewController.swift; sourceTree = "<group>"; };
-		CD0AE3A31EA45C85007A3798 /* ReasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonTableViewCell.swift; sourceTree = "<group>"; };
-		CD0AE3A51EA45DD4007A3798 /* ReasonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonViewModel.swift; sourceTree = "<group>"; };
 		CD0AE3A71EA46514007A3798 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		CD583C601EA050CD000D624A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD583C621EA05C83000D624A /* MM3DButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM3DButton.swift; sourceTree = "<group>"; };
@@ -55,11 +60,22 @@
 		CD6F3CF81E99E9EE005B42A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		CD77E2AA1EA53E4D004CC7F3 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
-		CD77E2AC1EA54236004CC7F3 /* ListReasonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonRouter.swift; sourceTree = "<group>"; };
-		CD77E2AE1EA544AD004CC7F3 /* AddReasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonViewController.swift; sourceTree = "<group>"; };
-		CD77E2B01EA54535004CC7F3 /* ListReasonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonConfigurator.swift; sourceTree = "<group>"; };
-		CD77E2B21EA5486F004CC7F3 /* AddReasonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonRouter.swift; sourceTree = "<group>"; };
-		CD77E2B41EA548E9004CC7F3 /* AddReasonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonConfigurator.swift; sourceTree = "<group>"; };
+		CD77E2B71EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBaseCollectionViewLayout.swift; sourceTree = "<group>"; };
+		CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
+		CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLayoutAttribute.swift; sourceTree = "<group>"; };
+		CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryReasonViewModel.swift; sourceTree = "<group>"; };
+		CD77E2C11EA56DBA004CC7F3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CD77E2C41EA5930F004CC7F3 /* ListReasonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonConfigurator.swift; sourceTree = "<group>"; };
+		CD77E2C51EA5930F004CC7F3 /* ListReasonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonRouter.swift; sourceTree = "<group>"; };
+		CD77E2C61EA5930F004CC7F3 /* ListReasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonViewController.swift; sourceTree = "<group>"; };
+		CD77E2C71EA5930F004CC7F3 /* ReasonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonTableViewCell.swift; sourceTree = "<group>"; };
+		CD77E2C81EA5930F004CC7F3 /* ReasonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonViewModel.swift; sourceTree = "<group>"; };
+		CD77E2CF1EA5934F004CC7F3 /* AddReasonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonConfigurator.swift; sourceTree = "<group>"; };
+		CD77E2D01EA5934F004CC7F3 /* AddReasonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonRouter.swift; sourceTree = "<group>"; };
+		CD77E2D11EA5934F004CC7F3 /* AddReasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonViewController.swift; sourceTree = "<group>"; };
+		CD77E2D51EA593C9004CC7F3 /* AddPaymentRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentRouter.swift; sourceTree = "<group>"; };
+		CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentConfigurator.swift; sourceTree = "<group>"; };
 		CD9381AA1EA313540031D554 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CD9381AD1EA313930031D554 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD9381B11EA314870031D554 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -88,14 +104,14 @@
 		CD0AE3A01EA45BE5007A3798 /* Add Bill */ = {
 			isa = PBXGroup;
 			children = (
-				CD0AE3A11EA45C10007A3798 /* ListReasonViewController.swift */,
-				CD0AE3A31EA45C85007A3798 /* ReasonTableViewCell.swift */,
-				CD0AE3A51EA45DD4007A3798 /* ReasonViewModel.swift */,
-				CD77E2AC1EA54236004CC7F3 /* ListReasonRouter.swift */,
-				CD77E2AE1EA544AD004CC7F3 /* AddReasonViewController.swift */,
-				CD77E2B01EA54535004CC7F3 /* ListReasonConfigurator.swift */,
-				CD77E2B21EA5486F004CC7F3 /* AddReasonRouter.swift */,
-				CD77E2B41EA548E9004CC7F3 /* AddReasonConfigurator.swift */,
+				CD77E2CE1EA5933C004CC7F3 /* Add Reason */,
+				CD77E2C31EA592CE004CC7F3 /* List Reason */,
+				CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */,
+				CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */,
+				CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */,
+				CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */,
+				CD77E2D51EA593C9004CC7F3 /* AddPaymentRouter.swift */,
+				CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */,
 			);
 			path = "Add Bill";
 			sourceTree = "<group>";
@@ -105,6 +121,7 @@
 			children = (
 				CD583C601EA050CD000D624A /* UIColor.swift */,
 				CD9381B61EA318550031D554 /* UIStoryboard.swift */,
+				CD77E2C11EA56DBA004CC7F3 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -128,6 +145,8 @@
 		CD6F3CEB1E99E9EE005B42A5 /* Mah Income */ = {
 			isa = PBXGroup;
 			children = (
+				CD77E2D91EA595AF004CC7F3 /* TransitionAnimator */,
+				CD77E2B61EA552CB004CC7F3 /* CollectionView Layout */,
 				CD9381B31EA314920031D554 /* Protocols */,
 				CD9381AF1EA314560031D554 /* Scenes */,
 				CD9381AC1EA3138A0031D554 /* Menu */,
@@ -155,6 +174,43 @@
 				CD77E2AA1EA53E4D004CC7F3 /* PaddingTextField.swift */,
 			);
 			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		CD77E2B61EA552CB004CC7F3 /* CollectionView Layout */ = {
+			isa = PBXGroup;
+			children = (
+				CD77E2B71EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift */,
+			);
+			path = "CollectionView Layout";
+			sourceTree = "<group>";
+		};
+		CD77E2C31EA592CE004CC7F3 /* List Reason */ = {
+			isa = PBXGroup;
+			children = (
+				CD77E2C41EA5930F004CC7F3 /* ListReasonConfigurator.swift */,
+				CD77E2C51EA5930F004CC7F3 /* ListReasonRouter.swift */,
+				CD77E2C61EA5930F004CC7F3 /* ListReasonViewController.swift */,
+				CD77E2C71EA5930F004CC7F3 /* ReasonTableViewCell.swift */,
+				CD77E2C81EA5930F004CC7F3 /* ReasonViewModel.swift */,
+			);
+			path = "List Reason";
+			sourceTree = "<group>";
+		};
+		CD77E2CE1EA5933C004CC7F3 /* Add Reason */ = {
+			isa = PBXGroup;
+			children = (
+				CD77E2CF1EA5934F004CC7F3 /* AddReasonConfigurator.swift */,
+				CD77E2D01EA5934F004CC7F3 /* AddReasonRouter.swift */,
+				CD77E2D11EA5934F004CC7F3 /* AddReasonViewController.swift */,
+			);
+			path = "Add Reason";
+			sourceTree = "<group>";
+		};
+		CD77E2D91EA595AF004CC7F3 /* TransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransitionAnimator;
 			sourceTree = "<group>";
 		};
 		CD9381A91EA313380031D554 /* Container Controller  */ = {
@@ -317,26 +373,34 @@
 			files = (
 				CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */,
 				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
+				CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */,
+				CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */,
 				CD9381AE1EA313930031D554 /* MenuViewController.swift in Sources */,
 				CD583C611EA050CD000D624A /* UIColor.swift in Sources */,
 				CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */,
 				CD9381B51EA314990031D554 /* Protocols.swift in Sources */,
-				CD77E2B11EA54535004CC7F3 /* ListReasonConfigurator.swift in Sources */,
+				CD77E2BE1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift in Sources */,
 				CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */,
 				CD583C651EA06A6D000D624A /* TestData.swift in Sources */,
-				CD77E2AF1EA544AD004CC7F3 /* AddReasonViewController.swift in Sources */,
+				CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */,
+				CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */,
+				CD77E2D31EA5934F004CC7F3 /* AddReasonRouter.swift in Sources */,
 				CD6F3CED1E99E9EE005B42A5 /* AppDelegate.swift in Sources */,
-				CD0AE3A21EA45C10007A3798 /* ListReasonViewController.swift in Sources */,
-				CD77E2B51EA548E9004CC7F3 /* AddReasonConfigurator.swift in Sources */,
-				CD77E2B31EA5486F004CC7F3 /* AddReasonRouter.swift in Sources */,
+				CD77E2CB1EA5930F004CC7F3 /* ListReasonViewController.swift in Sources */,
+				CD77E2D21EA5934F004CC7F3 /* AddReasonConfigurator.swift in Sources */,
 				CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */,
 				CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */,
+				CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */,
 				CD9381AB1EA313540031D554 /* ContainerViewController.swift in Sources */,
-				CD0AE3A41EA45C85007A3798 /* ReasonTableViewCell.swift in Sources */,
-				CD77E2AD1EA54236004CC7F3 /* ListReasonRouter.swift in Sources */,
-				CD0AE3A61EA45DD4007A3798 /* ReasonViewModel.swift in Sources */,
+				CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */,
+				CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */,
+				CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */,
+				CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */,
 				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
+				CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */,
 				CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */,
+				CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */,
+				CD77E2CC1EA5930F004CC7F3 /* ReasonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

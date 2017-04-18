@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol ListReasonViewProtocol: class {
+  func listReason(controller: ListReasonViewController, didSelectReason reason: ReasonViewModel)
+}
+
 class ListReasonViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
   var router: ListReasonRouter!
+  weak var delegate: ListReasonViewProtocol!
   
   lazy var tableFooterView: UIView = {
     let footerView = UIView()
@@ -50,7 +55,7 @@ class ListReasonViewController: UIViewController {
   }
   
   func addReasonHandler() {
-    router.presentAddReasonScene()
+    router.addAddReasonScene()
   }
   
 }
