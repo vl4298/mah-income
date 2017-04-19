@@ -17,10 +17,18 @@ class ListReasonRouter {
     AddReasonConfigurator.sharedInstance.configure(viewController: addReasonVC)
     
     viewController.addChildViewController(addReasonVC)
+    viewController.view.addSubview(addReasonVC.view)
+    
+    let transform1 = CGAffineTransform(translationX: viewController.view.frame.width, y: 0)
+    let transform2 = CGAffineTransform(translationX: -viewController.view.frame.width, y: 0)
     
     addReasonVC.view.frame = viewController.view.frame
-    viewController.view.addSubview(addReasonVC.view)
-    UIView.transition(from: viewController.view, to: addReasonVC.view, duration: 0.5, options: .transitionFlipFromLeft, completion: { _ in
+    addReasonVC.view.transform = transform1
+    UIView.animate(withDuration: 0.5, animations: {
+      self.viewController.view.transform = transform2
+    }, completion: { _ in
+      addReasonVC.view.transform = CGAffineTransform.identity
+      self.viewController.view.transform = CGAffineTransform.identity
       addReasonVC.didMove(toParentViewController: self.viewController)
     })
   }

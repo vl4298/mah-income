@@ -35,6 +35,10 @@ class AddPaymentViewController: UIViewController {
     setupCollectionViewLayout()
   }
   
+  override var prefersStatusBarHidden: Bool {
+    return true
+  }
+  
   func setupCollectionViewLayout() {
     let itemGap: CGFloat = 10.0
     let itemSize = CGSize(width: collectionView.bounds.size.width - 12*itemGap, height: collectionView.bounds.height)
@@ -44,6 +48,10 @@ class AddPaymentViewController: UIViewController {
     layout.minimumLineSpacing = itemGap
     layout.itemSize = itemSize
     collectionView.contentInset = UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
+  }
+  
+  @IBAction func handlerReasonButton(sender: UIButton) {
+    router.presentListReasonScene()
   }
   
 }
@@ -66,6 +74,7 @@ extension AddPaymentViewController: UICollectionViewDataSource {
 extension AddPaymentViewController: ListReasonViewProtocol {
   func listReason(controller: ListReasonViewController, didSelectReason reason: ReasonViewModel) {
     print("receive a reason:\(reason)")
+    router.dismissListReasonScene()
   }
 }
 

@@ -14,12 +14,20 @@ class AddReasonRouter {
   
   func transitionBackToListReason() {
     
+    let transform1 = CGAffineTransform(translationX: viewController.view.frame.width, y: 0)
+    let transform2 = CGAffineTransform(translationX: -viewController.view.frame.width, y: 0)
+    
+    self.viewController.parent!.view.transform = transform2
+    self.viewController.view.transform = transform1
+    
     viewController.willMove(toParentViewController: nil)
-    UIView.transition(from: viewController.view, to: viewController.parent!.view, duration: 0.5, options: .transitionFlipFromRight, completion: { _ in
+    UIView.animate(withDuration: 0.5, animations: {
+      self.viewController.parent!.view.transform = CGAffineTransform.identity
+    }, completion: { _ in
+      self.viewController.parent!.view.transform = CGAffineTransform.identity
       self.viewController.view.removeFromSuperview()
       self.viewController.removeFromParentViewController()
     })
-    
   }
   
 }

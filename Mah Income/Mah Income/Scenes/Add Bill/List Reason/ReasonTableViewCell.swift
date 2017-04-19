@@ -21,7 +21,7 @@ class ReasonTableViewCell: UITableViewCell {
     self.selectionStyle = .none
 //    titleLabel.isUserInteractionEnabled = false
 //    commentLabel.isUserInteractionEnabled = false
-    reasonStackView.isUserInteractionEnabled = false
+//    reasonStackView.isUserInteractionEnabled = false
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -42,10 +42,6 @@ class ReasonTableViewCell: UITableViewCell {
     } else {
       commentLabel.isHidden = true
     }
-  }
-  
-  func handleSelected() {
-    underlineButton.sendActions(for: .touchDown)
   }
   
 }

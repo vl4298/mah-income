@@ -79,8 +79,7 @@ extension ListReasonViewController: UITableViewDataSource {
 
 extension ListReasonViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print("did Select")
-    let cell = tableView.cellForRow(at: indexPath) as! ReasonTableViewCell
-    cell.handleSelected()
+    print("did select")
+    delegate.listReason(controller: self, didSelectReason: TestData.AddReason.value[indexPath.row])
   }
 }
