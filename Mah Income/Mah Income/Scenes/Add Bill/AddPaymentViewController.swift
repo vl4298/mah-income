@@ -73,7 +73,6 @@ extension AddPaymentViewController: UICollectionViewDataSource {
 
 extension AddPaymentViewController: ListReasonViewProtocol {
   func listReason(controller: ListReasonViewController, didSelectReason reason: ReasonViewModel) {
-    print("receive a reason:\(reason)")
     router.dismissListReasonScene()
   }
 }

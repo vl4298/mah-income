@@ -58,6 +58,12 @@ class ListReasonViewController: UIViewController {
     router.addAddReasonScene()
   }
   
+  func handlerCellTap(sender: UIButton) {
+    let buttonTag = sender.tag
+    let model = TestData.AddReason.value[buttonTag]
+    delegate.listReason(controller: self, didSelectReason: model)
+  }
+  
 }
 
 extension ListReasonViewController: UITableViewDataSource {
@@ -71,6 +77,9 @@ extension ListReasonViewController: UITableViewDataSource {
     
     let model = TestData.AddReason.value[indexPath.row]
     cell.configureData(model: model)
+    
+    cell.underlineButton.addTarget(self, action: #selector(self.handlerCellTap(sender:)), for: .touchUpInside)
+    cell.underlineButton.tag = indexPath.row
     
     return cell
   }

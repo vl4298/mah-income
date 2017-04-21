@@ -13,15 +13,13 @@ class ReasonTableViewCell: UITableViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var commentLabel: UILabel!
   @IBOutlet weak var reasonStackView: UIStackView!
-  @IBOutlet weak var underlineButton: UIButton!
+  @IBOutlet weak var underlineButton: MM3DButton!
   
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.selectionStyle = .none
-//    titleLabel.isUserInteractionEnabled = false
-//    commentLabel.isUserInteractionEnabled = false
-//    reasonStackView.isUserInteractionEnabled = false
+    reasonStackView.isUserInteractionEnabled = false
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

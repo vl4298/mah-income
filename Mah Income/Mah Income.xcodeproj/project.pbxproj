@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F5591EA6F9A70000227A /* GradientView.swift */; };
+		CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55B1EA6FC280000227A /* MenuViewController.swift */; };
+		CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55E1EA6FC560000227A /* ContainerViewController.swift */; };
 		CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A71EA46514007A3798 /* PassthroughView.swift */; };
 		CD583C611EA050CD000D624A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C601EA050CD000D624A /* UIColor.swift */; };
 		CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C621EA05C83000D624A /* MM3DButton.swift */; };
@@ -35,8 +38,6 @@
 		CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */; };
 		CD77E2DB1EA595E5004CC7F3 /* LinearTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2DA1EA595E5004CC7F3 /* LinearTransitionAnimator.swift */; };
 		CD77E2DD1EA5A182004CC7F3 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2DC1EA5A182004CC7F3 /* DimmingPresentationController.swift */; };
-		CD9381AB1EA313540031D554 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381AA1EA313540031D554 /* ContainerViewController.swift */; };
-		CD9381AE1EA313930031D554 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381AD1EA313930031D554 /* MenuViewController.swift */; };
 		CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B11EA314870031D554 /* HomeViewController.swift */; };
 		CD9381B51EA314990031D554 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B41EA314990031D554 /* Protocols.swift */; };
 		CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B61EA318550031D554 /* UIStoryboard.swift */; };
@@ -47,9 +48,14 @@
 		CDC494091E9F12CF0091E58F /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDC494041E9F12CF0091E58F /* digital-7 (mono).ttf */; };
 		CDC4940A1E9F12CF0091E58F /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDC494051E9F12CF0091E58F /* digital-7.ttf */; };
 		CDC4940B1E9F12CF0091E58F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDC494061E9F12CF0091E58F /* readme.txt */; };
+		CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */; };
+		CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD02F5591EA6F9A70000227A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CD02F55B1EA6FC280000227A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CD02F55E1EA6FC560000227A /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CD0AE3A71EA46514007A3798 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		CD583C601EA050CD000D624A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD583C621EA05C83000D624A /* MM3DButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM3DButton.swift; sourceTree = "<group>"; };
@@ -80,8 +86,6 @@
 		CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentConfigurator.swift; sourceTree = "<group>"; };
 		CD77E2DA1EA595E5004CC7F3 /* LinearTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearTransitionAnimator.swift; sourceTree = "<group>"; };
 		CD77E2DC1EA5A182004CC7F3 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
-		CD9381AA1EA313540031D554 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		CD9381AD1EA313930031D554 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD9381B11EA314870031D554 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CD9381B41EA314990031D554 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		CD9381B61EA318550031D554 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		CDC494041E9F12CF0091E58F /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
 		CDC494051E9F12CF0091E58F /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		CDC494061E9F12CF0091E58F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,19 @@
 		CD02F5581EA6F86C0000227A /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CD02F55B1EA6FC280000227A /* MenuViewController.swift */,
+				CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		CD02F55D1EA6FC560000227A /* Container Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD02F55E1EA6FC560000227A /* ContainerViewController.swift */,
+			);
+			name = "Container Controller";
+			path = "Parent Controller ";
 			sourceTree = "<group>";
 		};
 		CD0AE3A01EA45BE5007A3798 /* Add Bill */ = {
@@ -160,8 +177,6 @@
 				CD77E2B61EA552CB004CC7F3 /* CollectionView Layout */,
 				CD9381B31EA314920031D554 /* Protocols */,
 				CD9381AF1EA314560031D554 /* Scenes */,
-				CD9381AC1EA3138A0031D554 /* Menu */,
-				CD9381A91EA313380031D554 /* Container Controller  */,
 				CD583C5F1EA050C5000D624A /* Extension */,
 				CDC494001E9F12C50091E58F /* Font */,
 				CDC493FD1E9ED41E0091E58F /* Logger */,
@@ -183,6 +198,7 @@
 				CD583C621EA05C83000D624A /* MM3DButton.swift */,
 				CD0AE3A71EA46514007A3798 /* PassthroughView.swift */,
 				CD77E2AA1EA53E4D004CC7F3 /* PaddingTextField.swift */,
+				CD02F5591EA6F9A70000227A /* GradientView.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -226,26 +242,11 @@
 			path = TransitionAnimator;
 			sourceTree = "<group>";
 		};
-		CD9381A91EA313380031D554 /* Container Controller  */ = {
-			isa = PBXGroup;
-			children = (
-				CD9381AA1EA313540031D554 /* ContainerViewController.swift */,
-			);
-			name = "Container Controller ";
-			path = "Parent Controller ";
-			sourceTree = "<group>";
-		};
-		CD9381AC1EA3138A0031D554 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				CD9381AD1EA313930031D554 /* MenuViewController.swift */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
 		CD9381AF1EA314560031D554 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CDCC04DA1EA99A2300BFBD43 /* Analyze */,
+				CD02F55D1EA6FC560000227A /* Container Controller */,
 				CD02F5581EA6F86C0000227A /* Menu */,
 				CD0AE3A01EA45BE5007A3798 /* Add Bill */,
 				CD9381B01EA3146A0031D554 /* Home */,
@@ -305,6 +306,14 @@
 				CDC494061E9F12CF0091E58F /* readme.txt */,
 			);
 			path = "digital-7";
+			sourceTree = "<group>";
+		};
+		CDCC04DA1EA99A2300BFBD43 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */,
+			);
+			path = Analyze;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,9 +396,10 @@
 			files = (
 				CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */,
 				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
+				CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */,
 				CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */,
+				CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */,
 				CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */,
-				CD9381AE1EA313930031D554 /* MenuViewController.swift in Sources */,
 				CD583C611EA050CD000D624A /* UIColor.swift in Sources */,
 				CD77E2DB1EA595E5004CC7F3 /* LinearTransitionAnimator.swift in Sources */,
 				CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */,
@@ -406,12 +416,14 @@
 				CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */,
 				CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */,
 				CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */,
-				CD9381AB1EA313540031D554 /* ContainerViewController.swift in Sources */,
+				CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */,
 				CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */,
 				CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */,
 				CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */,
 				CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */,
 				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
+				CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */,
+				CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */,
 				CD77E2DD1EA5A182004CC7F3 /* DimmingPresentationController.swift in Sources */,
 				CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */,
 				CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */,

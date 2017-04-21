@@ -12,6 +12,21 @@ protocol MenuProtocol: class {
   
 }
 
+extension MenuProtocol where Self: UIViewController {
+  func askContainerForPresentingNewScene(sceneIdentify: String, menuItemPlace: CGRect) {
+    guard let parentVC = self.parent else {
+      print("parent is nil")
+      return
+    }
+    
+    if parentVC is ContainerProtocol {
+      (parentVC as! ContainerProtocol).presentNewSceneWith(identify: sceneIdentify, animationPlace: menuItemPlace)
+    } else {
+      print("not ContainerProtocol")
+    }
+  }
+}
+
 protocol MenuContainer: class {
   var menu: MenuProtocol! {get set}
   
@@ -39,4 +54,16 @@ extension MenuPresentable where Self: UIViewController {
 
 protocol ContainerProtocol: class {
   var currentVC: UIViewController! { get set}
+  
+  func presentNewSceneWith(identify: String, animationPlace: CGRect)
+  func present(newController newVC: UIViewController, initialFrame: CGRect)
 }
+
+
+
+
+
+
+
+
+

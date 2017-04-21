@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     window?.makeKeyAndVisible()
     
-    let addPaymentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: AddPaymentViewController.self)!
-    AddPaymentConfigurator.sharedInstance.configure(viewController: addPaymentVC)
+    let containerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: ContainerViewController.self)!
+    containerVC.currentVC = containerVC.storyboard!.instantiateViewController(type: HomeViewController.self)!
     
-    window?.rootViewController = addPaymentVC
+    window?.rootViewController = containerVC
     
     return true
   }
