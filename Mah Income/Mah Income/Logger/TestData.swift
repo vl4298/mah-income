@@ -31,4 +31,23 @@ struct TestData {
     ]
   }
   
+  struct ListPayment {
+    static let value = [
+      PaymentModel(),
+      PaymentModel(),
+      PaymentModel(),
+      PaymentModel(),
+      PaymentModel(),
+    ]
+  }
+  
+  struct Category {
+    static let value = [
+      "Food",
+      "Bus",
+      "Mobile",
+      "Clothes"
+    ]
+  }
+  
 }

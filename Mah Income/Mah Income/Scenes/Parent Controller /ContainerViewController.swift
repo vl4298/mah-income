@@ -14,20 +14,46 @@ class ContainerViewController: UIViewController {
   var currentVC: UIViewController!
   var newVC: UIViewController?
   
+  lazy var menuButton: UIButton = {
+    let button = UIButton()
+    button.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+    button.layer.cornerRadius = button.frame.width/2
+    button.backgroundColor = AppColor.menuButton
+    button.layer.shadowColor = AppColor.menuButtonShadow.cgColor
+    button.layer.shadowOffset = CGSize(width: 1.0, height: 0.0)
+    button.layer.shadowOpacity = 1.0
+    
+    button.addTarget(self, action: #selector(self.presentMenu), for: .touchUpInside)
+    
+    return button
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if let homeVC = storyboard!.instantiateViewController(type: HomeViewController.self) {
+    if let homeVC = storyboard!.instantiateViewController(type: ListPaymentViewController.self) {
       addChildViewController(homeVC)
       homeVC.view.frame = view.frame
       view.addSubview(homeVC.view)
       homeVC.didMove(toParentViewController: self)
+      
+      currentVC = homeVC
     } else {
       print("can not instante")
     }
     
+    view.addSubview(menuButton)
+    view.bringSubview(toFront: menuButton)
     menu = storyboard!.instantiateViewController(type: MenuViewController.self)!
-    
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    menuButton.frame.origin = CGPoint(x: -menuButton.frame.width/2, y: view.frame.height/2 - menuButton.frame.height/2)
+  }
+  
+  override var prefersStatusBarHidden: Bool {
+    return true
   }
   
   func setupAfterPresentNewScene() {
@@ -38,14 +64,23 @@ class ContainerViewController: UIViewController {
     dismissMenu()
   }
   
+  func animateMenuButtonIn() {
+    view.bringSubview(toFront: menuButton)
+    menuButton.frame.origin = CGPoint(x: -menuButton.frame.width, y: view.frame.height/2 - menuButton.frame.height/2)
+    UIView.animate(withDuration: 0.3) {
+      self.menuButton.frame.origin = CGPoint(x: -self.menuButton.frame.width/2, y: self.view.frame.height/2 - self.menuButton.frame.height/2)
+    }
+  }
+  
 }
 
 extension ContainerViewController: MenuContainer {
   func presentMenu() {
     let isVC = menu is UIViewController
     if isVC {
-      let menuVC = menu as! UIViewController
+      menuButton.isHidden = true
       
+      let menuVC = menu as! UIViewController
       addChildViewController(menuVC)
       menuVC.view.frame = view.frame
       menuVC.view.transform = CGAffineTransform(translationX: -menuVC.view.frame.width, y: 0)
@@ -63,10 +98,14 @@ extension ContainerViewController: MenuContainer {
   }
   
   func dismissMenu() {
-    let _menu = menu as! UIViewController
+    let _menu = menu as! MenuViewController
     _menu.willMove(toParentViewController: nil)
     _menu.view.removeFromSuperview()
     _menu.removeFromParentViewController()
+    
+    _menu.tableView.reloadData()
+    menuButton.isHidden = false
+    animateMenuButtonIn()
   }
 }
 
@@ -74,10 +113,17 @@ extension ContainerViewController: ContainerProtocol {
   func presentNewSceneWith(identify: String, animationPlace: CGRect) {
     var vc: UIViewController!
     switch identify {
-    case "HomeViewController":
-      vc = self.storyboard!.instantiateViewController(type: HomeViewController.self)!
+    case "ListPaymentViewController":
+      vc = self.storyboard!.instantiateViewController(type: ListPaymentViewController.self)!
+    case "AddPaymentViewController":
+      vc = self.storyboard!.instantiateViewController(type: AddPaymentViewController.self)!
+    case "CategoryViewController":
+      vc = self.storyboard!.instantiateViewController(type: CategoryViewController.self)!
+      CategoryConfigurator.sharedInstance.configure(viewController: vc as! CategoryViewController)
     case "AnalyzeViewController":
       vc = self.storyboard!.instantiateViewController(type: AnalyzeViewController.self)!
+    case "SettingViewController":
+      vc = self.storyboard!.instantiateViewController(type: SettingViewController.self)!
       
     default:
       return
@@ -105,7 +151,7 @@ extension ContainerViewController: ContainerProtocol {
     let maskLayerAnimation = CABasicAnimation(keyPath: "path")
     maskLayerAnimation.fromValue = circleMaskPathInitial.cgPath
     maskLayerAnimation.toValue = circleMaskPathFinal.cgPath
-    maskLayerAnimation.duration = 1.0
+    maskLayerAnimation.duration = 0.6
     maskLayerAnimation.delegate = self
     maskLayer.add(maskLayerAnimation, forKey: "path")
   }

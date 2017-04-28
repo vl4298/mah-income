@@ -10,7 +10,15 @@
 		CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F5591EA6F9A70000227A /* GradientView.swift */; };
 		CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55B1EA6FC280000227A /* MenuViewController.swift */; };
 		CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55E1EA6FC560000227A /* ContainerViewController.swift */; };
+		CD0477CC1EAC5C64006F8304 /* ListPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */; };
+		CD0477CE1EAC5D24006F8304 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */; };
+		CD0477D01EAC5E42006F8304 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CF1EAC5E42006F8304 /* ApplicationManager.swift */; };
 		CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A71EA46514007A3798 /* PassthroughView.swift */; };
+		CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */; };
+		CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */; };
+		CD44A4DC1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */; };
+		CD44A4DE1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */; };
+		CD44A4E01EB3BC12003992DE /* CategoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */; };
 		CD583C611EA050CD000D624A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C601EA050CD000D624A /* UIColor.swift */; };
 		CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C621EA05C83000D624A /* MM3DButton.swift */; };
 		CD583C651EA06A6D000D624A /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C641EA06A6D000D624A /* TestData.swift */; };
@@ -38,7 +46,10 @@
 		CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */; };
 		CD77E2DB1EA595E5004CC7F3 /* LinearTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2DA1EA595E5004CC7F3 /* LinearTransitionAnimator.swift */; };
 		CD77E2DD1EA5A182004CC7F3 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2DC1EA5A182004CC7F3 /* DimmingPresentationController.swift */; };
-		CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B11EA314870031D554 /* HomeViewController.swift */; };
+		CD78D60F1EB2C9050011C39D /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD78D60E1EB2C9050011C39D /* CategoryTableViewCell.swift */; };
+		CD7938171EAEDD1A00157BBD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7938161EAEDD1A00157BBD /* SettingViewController.swift */; };
+		CD7938191EAEDD2E00157BBD /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7938181EAEDD2E00157BBD /* CategoryViewController.swift */; };
+		CD9381B21EA314870031D554 /* ListPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B11EA314870031D554 /* ListPaymentViewController.swift */; };
 		CD9381B51EA314990031D554 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B41EA314990031D554 /* Protocols.swift */; };
 		CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9381B61EA318550031D554 /* UIStoryboard.swift */; };
 		CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC493FA1E9ED0C10091E58F /* Constant.swift */; };
@@ -56,7 +67,15 @@
 		CD02F5591EA6F9A70000227A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		CD02F55B1EA6FC280000227A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD02F55E1EA6FC560000227A /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		CD0477CF1EAC5E42006F8304 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		CD0AE3A71EA46514007A3798 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
+		CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryViewController.swift; sourceTree = "<group>"; };
+		CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
+		CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryRouter.swift; sourceTree = "<group>"; };
+		CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryConfigurator.swift; sourceTree = "<group>"; };
+		CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryConfigurator.swift; sourceTree = "<group>"; };
 		CD583C601EA050CD000D624A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD583C621EA05C83000D624A /* MM3DButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM3DButton.swift; sourceTree = "<group>"; };
 		CD583C641EA06A6D000D624A /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
@@ -86,7 +105,10 @@
 		CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentConfigurator.swift; sourceTree = "<group>"; };
 		CD77E2DA1EA595E5004CC7F3 /* LinearTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearTransitionAnimator.swift; sourceTree = "<group>"; };
 		CD77E2DC1EA5A182004CC7F3 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
-		CD9381B11EA314870031D554 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CD78D60E1EB2C9050011C39D /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		CD7938161EAEDD1A00157BBD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CD7938181EAEDD2E00157BBD /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CD9381B11EA314870031D554 /* ListPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentViewController.swift; sourceTree = "<group>"; };
 		CD9381B41EA314990031D554 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		CD9381B61EA318550031D554 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		CDC493FA1E9ED0C10091E58F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -144,6 +166,16 @@
 			path = "Add Bill";
 			sourceTree = "<group>";
 		};
+		CD44A4D61EB3BA77003992DE /* Add & Update Category */ = {
+			isa = PBXGroup;
+			children = (
+				CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */,
+				CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */,
+				CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */,
+			);
+			path = "Add & Update Category";
+			sourceTree = "<group>";
+		};
 		CD583C5F1EA050C5000D624A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +219,7 @@
 				CD6F3CF31E99E9EE005B42A5 /* Assets.xcassets */,
 				CD6F3CF51E99E9EE005B42A5 /* LaunchScreen.storyboard */,
 				CD6F3CF81E99E9EE005B42A5 /* Info.plist */,
+				CD0477CF1EAC5E42006F8304 /* ApplicationManager.swift */,
 			);
 			path = "Mah Income";
 			sourceTree = "<group>";
@@ -242,9 +275,31 @@
 			path = TransitionAnimator;
 			sourceTree = "<group>";
 		};
+		CD7938141EAEDCFE00157BBD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CD7938161EAEDD1A00157BBD /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CD7938151EAEDD0800157BBD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CD44A4D61EB3BA77003992DE /* Add & Update Category */,
+				CD7938181EAEDD2E00157BBD /* CategoryViewController.swift */,
+				CD78D60E1EB2C9050011C39D /* CategoryTableViewCell.swift */,
+				CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */,
+				CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		CD9381AF1EA314560031D554 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CD7938151EAEDD0800157BBD /* Category */,
+				CD7938141EAEDCFE00157BBD /* Setting */,
 				CDCC04DA1EA99A2300BFBD43 /* Analyze */,
 				CD02F55D1EA6FC560000227A /* Container Controller */,
 				CD02F5581EA6F86C0000227A /* Menu */,
@@ -257,7 +312,9 @@
 		CD9381B01EA3146A0031D554 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CD9381B11EA314870031D554 /* HomeViewController.swift */,
+				CD9381B11EA314870031D554 /* ListPaymentViewController.swift */,
+				CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */,
+				CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */,
 			);
 			name = Home;
 			path = "Home Scene";
@@ -395,17 +452,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */,
+				CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */,
 				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
 				CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */,
 				CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */,
 				CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */,
 				CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */,
 				CD583C611EA050CD000D624A /* UIColor.swift in Sources */,
+				CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */,
 				CD77E2DB1EA595E5004CC7F3 /* LinearTransitionAnimator.swift in Sources */,
 				CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */,
+				CD0477CE1EAC5D24006F8304 /* PaymentModel.swift in Sources */,
 				CD9381B51EA314990031D554 /* Protocols.swift in Sources */,
 				CD77E2BE1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift in Sources */,
+				CD44A4E01EB3BC12003992DE /* CategoryConfigurator.swift in Sources */,
 				CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */,
+				CD78D60F1EB2C9050011C39D /* CategoryTableViewCell.swift in Sources */,
 				CD583C651EA06A6D000D624A /* TestData.swift in Sources */,
 				CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */,
 				CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */,
@@ -413,14 +475,19 @@
 				CD6F3CED1E99E9EE005B42A5 /* AppDelegate.swift in Sources */,
 				CD77E2CB1EA5930F004CC7F3 /* ListReasonViewController.swift in Sources */,
 				CD77E2D21EA5934F004CC7F3 /* AddReasonConfigurator.swift in Sources */,
-				CD9381B21EA314870031D554 /* HomeViewController.swift in Sources */,
+				CD44A4DC1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift in Sources */,
+				CD7938191EAEDD2E00157BBD /* CategoryViewController.swift in Sources */,
+				CD0477D01EAC5E42006F8304 /* ApplicationManager.swift in Sources */,
+				CD9381B21EA314870031D554 /* ListPaymentViewController.swift in Sources */,
 				CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */,
 				CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */,
 				CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */,
 				CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */,
+				CD44A4DE1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift in Sources */,
 				CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */,
 				CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */,
 				CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */,
+				CD7938171EAEDD1A00157BBD /* SettingViewController.swift in Sources */,
 				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
 				CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */,
 				CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */,
@@ -428,6 +495,7 @@
 				CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */,
 				CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */,
 				CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */,
+				CD0477CC1EAC5C64006F8304 /* ListPaymentTableViewCell.swift in Sources */,
 				CD77E2CC1EA5930F004CC7F3 /* ReasonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

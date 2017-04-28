@@ -29,7 +29,17 @@ struct AppColor {
     static let disableShadowColor = UIColor(rgb: 0x757575)
   }
   
-  static let mainColor = UIColor(red: 0, green: 72/255, blue: 0, alpha: 1.0)
+  struct Menu {
+    static let home = UIColor(rgb: 0xEEEEEE)
+    static let addBill = UIColor(rgb: 0x009688)
+    static let category = UIColor(rgb: 0x673AB7)
+    static let analyze = UIColor(rgb: 0x9E9E9E)
+    static let setting = UIColor(rgb: 0x795548)
+  }
+  
+  static let mainColor = UIColor(rgb: 0xE0E0E0)
+  static let menuButton = UIColor(rgb: 0xEEEEEE)
+  static let menuButtonShadow = UIColor(rgb: 0xBDBDBD)
   
 }
 

@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     
     let containerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: ContainerViewController.self)!
-    containerVC.currentVC = containerVC.storyboard!.instantiateViewController(type: HomeViewController.self)!
     
     window?.rootViewController = containerVC
     

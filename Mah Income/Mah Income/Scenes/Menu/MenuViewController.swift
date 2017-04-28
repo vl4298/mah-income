@@ -8,37 +8,43 @@
 
 import UIKit
 
-struct MenuItemModel {
+class MenuItemModel {
   var controllerIdentify: String
   var img: String
   var name: String
+  var color: UIColor
+  var isSelected = false
   
-  init(controllerIdentify: String = "HomeViewController", img: String, name: String) {
+  init(controllerIdentify: String, img: String, name: String, color: UIColor, isSelected: Bool = false) {
     self.controllerIdentify = controllerIdentify
     self.img = img
     self.name = name
+    self.color = color
+    self.isSelected = isSelected
   }
 }
 
 fileprivate let menuData = [
-
-  MenuItemModel(controllerIdentify: "AnalyzeViewController", img: "analyze", name: "Analyze"),
-  MenuItemModel(img: "analyze", name: "Analyze"),
-  MenuItemModel(controllerIdentify: "AnalyzeViewController", img: "analyze", name: "Analyze"),
-  MenuItemModel(img: "analyze", name: "Analyze"),
-  MenuItemModel(controllerIdentify: "AnalyzeViewController", img: "analyze", name: "Analyze"),
-  MenuItemModel(img: "analyze", name: "Analyze"),
+  MenuItemModel(controllerIdentify: "ListPaymentViewController", img: "home", name: "Home", color: AppColor.Menu.home, isSelected: true),
+  MenuItemModel(controllerIdentify: "AddPaymentViewController", img: "plus", name: "Add Bill", color: AppColor.Menu.addBill),
+  MenuItemModel(controllerIdentify: "CategoryViewController", img: "category", name: "Category", color: AppColor.Menu.category),
+  MenuItemModel(controllerIdentify: "AnalyzeViewController", img: "analyze", name: "Analyze", color: AppColor.Menu.analyze),
+  MenuItemModel(controllerIdentify: "SettingViewController", img: "setting", name: "Setting", color: AppColor.Menu.setting),
 ]
 
 class MenuViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  var selectedMenu: MenuItemModel? = nil
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     tableView.dataSource = self
     tableView.delegate = self
+    
+    selectedMenu = menuData.first!
   }
   
 }
@@ -67,6 +73,15 @@ extension MenuViewController: UITableViewDataSource {
 extension MenuViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let menuItem = menuData[indexPath.row]
+    
+    if menuItem.isSelected {
+      return
+    }
+    
+    selectedMenu?.isSelected = false
+    menuItem.isSelected = true
+    selectedMenu = menuItem
+    
     let cell = tableView.cellForRow(at: indexPath) as! MenuTableViewCell
     cell.animate {[weak self] colorViewFrame in
       guard let this = self else { return }
