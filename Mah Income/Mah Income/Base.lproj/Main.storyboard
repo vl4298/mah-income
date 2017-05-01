@@ -24,22 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-d3-7PM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <color key="backgroundColor" red="0.0" green="0.53725490196078429" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="eev-BW-dW0"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Add Payment" id="wn8-mZ-hiT"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQl-ON-TH2" customClass="MM3DButton" customModule="Mah_Income" customModuleProvider="target">
-                                <rect key="frame" x="16" y="145.5" width="343" height="44.5"/>
+                                <rect key="frame" x="16" y="141.5" width="343" height="44.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.53725490200000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -60,9 +46,9 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZw-1b-n1Y">
-                                <rect key="frame" x="16" y="206" width="343" height="66.5"/>
+                                <rect key="frame" x="16" y="202" width="343" height="66.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-hN-6UO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-hN-6UO">
                                         <rect key="frame" x="8" y="8" width="327" height="50.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,112 +64,148 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mxH-LQ-fRn">
-                                <rect key="frame" x="24" y="292.5" width="327" height="364.5"/>
+                                <rect key="frame" x="24" y="288.5" width="327" height="368.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="P8c-xd-WAY">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="81"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-NP-Une" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980392156861" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fs6-NP-Une" secondAttribute="height" multiplier="1:1" id="it2-2x-foc"/>
                                                 </constraints>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePm-6B-iek"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-xI-ice" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="123.5" y="0.0" width="80.5" height="81"/>
+                                                <rect key="frame" x="123" y="0.0" width="81.5" height="82"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Qa1-xI-ice" secondAttribute="height" multiplier="1:1" id="yQM-QY-1F6"/>
                                                 </constraints>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npm-X5-SnE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-L5-SaG" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="246" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="245" y="0.0" width="82" height="82"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TO2-L5-SaG" secondAttribute="height" multiplier="1:1" id="Vg5-cz-dFy"/>
                                                 </constraints>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEH-J7-Z4k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hZh-Ve-3Sq">
-                                        <rect key="frame" x="0.0" y="94" width="327" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="95" width="327" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5K-YE-4th" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="82" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="I5K-YE-4th" secondAttribute="height" multiplier="1:1" id="9Dj-2y-Lwp"/>
                                                 </constraints>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfy-gA-neJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-Pi-QKh" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="122.5" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="z5d-Pi-QKh" secondAttribute="height" multiplier="1:1" id="b7D-Xz-o8w"/>
                                                 </constraints>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oye-is-9S4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjZ-r7-6sF" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="245" y="0.0" width="82" height="81.5"/>
+                                                <rect key="frame" x="244" y="0.0" width="83" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kjZ-r7-6sF" secondAttribute="height" multiplier="1:1" id="idL-16-fp5"/>
                                                 </constraints>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtf-Me-Sn0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zIs-SD-d48">
-                                        <rect key="frame" x="0.0" y="188.5" width="327" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="190.5" width="327" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgU-EG-4xI" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GgU-EG-4xI" secondAttribute="height" multiplier="1:1" id="ayY-7X-FGn"/>
                                                 </constraints>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubs-yy-V1s"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4j-l7-e9R" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="122.5" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="N4j-l7-e9R" secondAttribute="height" multiplier="1:1" id="gfK-Zj-avO"/>
                                                 </constraints>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iCP-s4-9Ak"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-i0-Qzo" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="245.5" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="244.5" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Vd1-i0-Qzo" secondAttribute="height" multiplier="1:1" id="4fn-nS-wIB"/>
                                                 </constraints>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sA-vh-0KR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Obe-4X-0ZZ">
-                                        <rect key="frame" x="0.0" y="283" width="327" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="286" width="327" height="82.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXA-lV-dJM" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pXA-lV-dJM" secondAttribute="height" multiplier="1:1" id="DNN-Z6-FW3"/>
                                                 </constraints>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="handleNumberButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYY-hM-Oy3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCa-kd-c6N" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="123" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="122.5" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OCa-kd-c6N" secondAttribute="height" multiplier="1:1" id="SPV-ei-Duj"/>
                                                 </constraints>
                                                 <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="handleDotButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSX-uy-C4M"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k31-j9-aCO" customClass="NumberButton" customModule="Mah_Income" customModuleProvider="target">
-                                                <rect key="frame" x="245.5" y="0.0" width="81.5" height="81.5"/>
+                                                <rect key="frame" x="244.5" y="0.0" width="82.5" height="82.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="k31-j9-aCO" secondAttribute="height" multiplier="1:1" id="8PS-km-ctm"/>
                                                 </constraints>
                                                 <state key="normal" title="🔙"/>
+                                                <connections>
+                                                    <action selector="handleBackspaceButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gzk-Uv-iqQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -195,14 +217,14 @@
                                     <constraint firstItem="zIs-SD-d48" firstAttribute="height" secondItem="mxH-LQ-fRn" secondAttribute="height" multiplier="1:4" constant="-10" id="9Ys-Ns-YPh"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food: Bale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-29-AHo">
-                                <rect key="frame" x="20.5" y="151" width="333" height="34.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-29-AHo">
+                                <rect key="frame" x="20.5" y="147" width="333" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l7I-7T-KVn">
-                                <rect key="frame" x="0.0" y="74" width="375" height="51.5"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="51.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mZw-rg-gfZ">
                                     <size key="itemSize" width="261" height="50"/>
@@ -249,6 +271,25 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZb-4N-gMV" customClass="MM3DButton" customModule="Mah_Income" customModuleProvider="target">
+                                <rect key="frame" x="36" y="10" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kLd-0s-Tbg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.77647058823529413" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAddButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbR-FO-CTo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -256,12 +297,11 @@
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AY6-fg-sNv"/>
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B9a-Pr-SMn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mxH-LQ-fRn" secondAttribute="bottom" constant="10" id="CMX-zY-zvo"/>
-                            <constraint firstItem="TQl-ON-TH2" firstAttribute="top" secondItem="l7I-7T-KVn" secondAttribute="bottom" constant="20" id="CsP-zc-QpT"/>
-                            <constraint firstItem="Dne-d3-7PM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EKC-FG-Dvh"/>
-                            <constraint firstAttribute="trailing" secondItem="Dne-d3-7PM" secondAttribute="trailing" id="HvR-fh-edt"/>
-                            <constraint firstItem="l7I-7T-KVn" firstAttribute="top" secondItem="Dne-d3-7PM" secondAttribute="bottom" constant="10" id="KTi-OS-FcX"/>
+                            <constraint firstItem="TQl-ON-TH2" firstAttribute="top" secondItem="l7I-7T-KVn" secondAttribute="bottom" constant="10" id="CsP-zc-QpT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GZb-4N-gMV" secondAttribute="trailing" constant="20" id="F50-Tk-QM8"/>
                             <constraint firstItem="TQl-ON-TH2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:15" id="MA3-ZS-t9j"/>
                             <constraint firstItem="jzo-29-AHo" firstAttribute="centerX" secondItem="TQl-ON-TH2" secondAttribute="centerX" id="MG8-9T-1N6"/>
+                            <constraint firstItem="GZb-4N-gMV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="OOy-gZ-bCi"/>
                             <constraint firstAttribute="trailing" secondItem="l7I-7T-KVn" secondAttribute="trailing" id="SJb-nh-vAv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TQl-ON-TH2" secondAttribute="trailing" id="TOI-Ud-Peq"/>
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:10" id="bDb-Eg-KRk"/>
@@ -271,15 +311,18 @@
                             <constraint firstItem="XZw-1b-n1Y" firstAttribute="top" secondItem="TQl-ON-TH2" secondAttribute="bottom" constant="16" id="feZ-nI-lTY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mxH-LQ-fRn" secondAttribute="trailing" constant="8" id="gHd-zp-uhw"/>
                             <constraint firstItem="mxH-LQ-fRn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="ivi-bZ-E9z"/>
+                            <constraint firstItem="GZb-4N-gMV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="q58-K2-hmD"/>
                             <constraint firstItem="l7I-7T-KVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tq0-fr-CJ9"/>
-                            <constraint firstItem="Dne-d3-7PM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uMP-Fo-FiR"/>
                             <constraint firstItem="mxH-LQ-fRn" firstAttribute="top" secondItem="XZw-1b-n1Y" secondAttribute="bottom" constant="20" id="upH-UA-Nn4"/>
                             <constraint firstItem="l7I-7T-KVn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:13" id="wju-aK-Od2"/>
+                            <constraint firstItem="l7I-7T-KVn" firstAttribute="top" secondItem="GZb-4N-gMV" secondAttribute="bottom" constant="20" id="zcD-Cl-JO4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lmT-Yi-NmK"/>
                     <connections>
                         <outlet property="collectionView" destination="l7I-7T-KVn" id="Omy-sY-rbL"/>
+                        <outlet property="reasonLabel" destination="jzo-29-AHo" id="qny-04-q8l"/>
+                        <outlet property="valueLabel" destination="oKz-hN-6UO" id="5MP-gh-aFZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -336,13 +379,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AYR-7A-d6R">
                                                             <rect key="frame" x="10" y="10" width="335" height="150"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isw-1c-NDs">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isw-1c-NDs">
                                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="81"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-sX-X5U">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-sX-X5U">
                                                                     <rect key="frame" x="20" y="81" width="295" height="69"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -352,6 +395,8 @@
                                                             <constraints>
                                                                 <constraint firstItem="isw-1c-NDs" firstAttribute="leading" secondItem="AYR-7A-d6R" secondAttribute="leading" id="8IX-HF-RFj"/>
                                                                 <constraint firstItem="5Vj-sX-X5U" firstAttribute="leading" secondItem="AYR-7A-d6R" secondAttribute="leading" constant="20" id="C28-Cu-8hy"/>
+                                                                <constraint firstItem="5Vj-sX-X5U" firstAttribute="top" secondItem="isw-1c-NDs" secondAttribute="bottom" id="SHc-R2-uoG"/>
+                                                                <constraint firstAttribute="bottom" secondItem="5Vj-sX-X5U" secondAttribute="bottom" id="abE-W0-Ivn"/>
                                                                 <constraint firstItem="isw-1c-NDs" firstAttribute="top" secondItem="AYR-7A-d6R" secondAttribute="top" id="dK0-UL-83F"/>
                                                                 <constraint firstAttribute="trailing" secondItem="5Vj-sX-X5U" secondAttribute="trailing" constant="20" id="iI3-D0-1E1"/>
                                                                 <constraint firstAttribute="trailing" secondItem="isw-1c-NDs" secondAttribute="trailing" id="oSz-BB-IhP"/>
@@ -484,6 +529,9 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAddWithSender:" destination="mYY-hc-dlz" eventType="touchUpInside" id="4Sy-El-IbD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2L-0l-bcq" customClass="MM3DButton" customModule="Mah_Income" customModuleProvider="target">
                                 <rect key="frame" x="26" y="305" width="323" height="50"/>
@@ -531,6 +579,10 @@
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="commentTextView" destination="ep8-Hr-hxq" id="nqj-Kl-PXt"/>
+                        <outlet property="titleTextfield" destination="Les-uc-vDT" id="aq2-Rg-pIi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpw-2K-Tuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -580,19 +632,25 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fx2-fJ-r43">
                                                     <rect key="frame" x="260" y="25" width="80" height="30"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zG-15-q59">
+                                                        <button opaque="NO" tag="20" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zG-15-q59">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="0zG-15-q59" secondAttribute="height" multiplier="1:1" id="7QN-2E-80F"/>
                                                             </constraints>
                                                             <state key="normal" backgroundImage="Edit-50"/>
+                                                            <connections>
+                                                                <action selector="handleButtonWithSender:" destination="Bw2-vv-C15" eventType="touchUpInside" id="fRI-DD-2ON"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8l-gK-mFn">
+                                                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8l-gK-mFn">
                                                             <rect key="frame" x="50" y="0.0" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="H8l-gK-mFn" secondAttribute="height" multiplier="1:1" id="01Z-6X-JR8"/>
                                                             </constraints>
                                                             <state key="normal" backgroundImage="Delete-50"/>
+                                                            <connections>
+                                                                <action selector="handleButtonWithSender:" destination="Bw2-vv-C15" eventType="touchUpInside" id="2dJ-LX-p9R"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -833,7 +891,7 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-Es-Oub">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-Es-Oub">
                                                                     <rect key="frame" x="4" y="123" width="221" height="7"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>

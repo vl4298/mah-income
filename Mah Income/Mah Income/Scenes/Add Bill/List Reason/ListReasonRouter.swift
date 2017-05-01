@@ -18,6 +18,7 @@ class ListReasonRouter {
     
     viewController.addChildViewController(addReasonVC)
     viewController.view.addSubview(addReasonVC.view)
+    addReasonVC.delegate = viewController
     
     let transform1 = CGAffineTransform(translationX: viewController.view.frame.width, y: 0)
     let transform2 = CGAffineTransform(translationX: -viewController.view.frame.width, y: 0)

@@ -22,6 +22,10 @@ class ListReasonConfigurator {
     
     viewController.router = router
     router.viewController = viewController
+    
+    let modelController = ListReasonModelController()
+    modelController.viewController = viewController
+    viewController.modelController = modelController
   }
   
 }

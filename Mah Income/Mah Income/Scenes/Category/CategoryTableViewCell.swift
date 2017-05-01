@@ -9,8 +9,8 @@
 import UIKit
 
 protocol CategoryTableViewCellDelegate: class {
-  func didSelectEdit(tableViewCell: CategoryTableViewCell)
-  func didSelectDelete(tableViewCell: CategoryTableViewCell)
+  func didSelectEdit(category: CategoryModel)
+  func didSelectDelete(category: CategoryModel)
 }
 
 class CategoryTableViewCell: UITableViewCell {
@@ -22,6 +22,7 @@ class CategoryTableViewCell: UITableViewCell {
   @IBOutlet weak var buttonStackView: UIStackView!
   
   weak var delegate: CategoryTableViewCellDelegate!
+  var category: CategoryModel!
   
   var panStartPoint: CGPoint = CGPoint.zero
   var startingRightLayoutConstrainst: CGFloat = 0.0
@@ -39,14 +40,18 @@ class CategoryTableViewCell: UITableViewCell {
   
   @IBAction func handleButton(sender: UIButton) {
     if sender.tag == 10 { // delete
-      delegate.didSelectDelete(tableViewCell: self)
+      delegate.didSelectDelete(category: category)
     } else {
-      delegate.didSelectEdit(tableViewCell: self)
+      delegate.didSelectEdit(category: category)
     }
+    
+    self.resetConstrainstToZero(animated: false, notifyDelegateDidClose: false)
   }
   
-  func configure(category: String) {
-    categoryLabel.text = category
+  func configure(category: CategoryModel) {
+    self.category = category
+    
+    categoryLabel.text = category._name
   }
   
   func handlePanGesture(gesture: UIPanGestureRecognizer) {

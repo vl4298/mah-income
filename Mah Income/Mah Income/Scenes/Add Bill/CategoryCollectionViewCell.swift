@@ -19,8 +19,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     categoryLabel.layer.masksToBounds = true
   }
   
-  func configure(model: CategoryReasonViewModel) {
-    categoryLabel.text = model.name
+  func configure(model: CategoryModel) {
+    categoryLabel.text = model._name
   }
   
   override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {

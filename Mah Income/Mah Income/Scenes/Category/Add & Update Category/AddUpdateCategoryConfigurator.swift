@@ -21,5 +21,10 @@ class AddUpdateCategoryConfigurator {
     
     router.viewController = viewController
     viewController.router = router
+    
+    let modelController = AddUpdateCategoryModelController()
+    viewController.modelController = modelController
+    
+    modelController.viewController = viewController
   }
 }

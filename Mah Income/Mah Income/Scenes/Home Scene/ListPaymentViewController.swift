@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
-class ListPaymentViewController: UIViewController {
+class ListPaymentViewController: UIViewController, NotificationPresentable {
   
   @IBOutlet weak var tableView: UITableView!
   
-
+  var payments: Results<PaymentModel>?
+  var modelController: ListPaymentModelController!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,14 +23,12 @@ class ListPaymentViewController: UIViewController {
     tableView.delegate = self
     tableView.rowHeight = UITableViewAutomaticDimension
     tableView.estimatedRowHeight = 150.0
+    
+    modelController.fetchAllPayment()
   }
   
   override var prefersStatusBarHidden: Bool {
     return true
-  }
-  
-  @IBAction func presentMenuHandler(sender: UIButton) {
-    askContainerToPresentMenu()
   }
   
 }
@@ -39,13 +39,13 @@ extension ListPaymentViewController: MenuPresentable {
 extension ListPaymentViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return TestData.ListPayment.value.count
+    return payments?.count ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ListPaymentTableViewCell") as! ListPaymentTableViewCell
     
-    let payment = TestData.ListPayment.value[indexPath.row]
+    let payment = payments![indexPath.row]
     cell.configure(payment: payment)
     
     return cell
@@ -60,4 +60,12 @@ extension ListPaymentViewController: UITableViewDelegate {
     cell.didSelectCell()
   }
   
+}
+
+extension ListPaymentViewController {
+  
+  func reloadData(listPayment: Results<PaymentModel>) {
+    payments = listPayment
+    self.tableView.reloadData()
+  }
 }

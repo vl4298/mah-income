@@ -18,5 +18,10 @@ class AddPaymentConfigurator {
     
     router.viewController = viewController
     viewController.router = router
+    
+    let modelController = AddPaymentModelController()
+    modelController.viewController = viewController
+    viewController.modelController = modelController
+    
   }
 }

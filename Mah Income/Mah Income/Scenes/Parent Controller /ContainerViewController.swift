@@ -32,6 +32,7 @@ class ContainerViewController: UIViewController {
     super.viewDidLoad()
     
     if let homeVC = storyboard!.instantiateViewController(type: ListPaymentViewController.self) {
+      ListPaymentConfigurator.sharedInstance.configure(viewController: homeVC)
       addChildViewController(homeVC)
       homeVC.view.frame = view.frame
       view.addSubview(homeVC.view)
@@ -115,8 +116,10 @@ extension ContainerViewController: ContainerProtocol {
     switch identify {
     case "ListPaymentViewController":
       vc = self.storyboard!.instantiateViewController(type: ListPaymentViewController.self)!
+      ListPaymentConfigurator.sharedInstance.configure(viewController: vc as! ListPaymentViewController)
     case "AddPaymentViewController":
       vc = self.storyboard!.instantiateViewController(type: AddPaymentViewController.self)!
+      AddPaymentConfigurator.sharedInstance.configure(viewController: vc as! AddPaymentViewController)
     case "CategoryViewController":
       vc = self.storyboard!.instantiateViewController(type: CategoryViewController.self)!
       CategoryConfigurator.sharedInstance.configure(viewController: vc as! CategoryViewController)

@@ -21,6 +21,10 @@ class AddReasonConfigurator {
     
     router.viewController = viewController
     viewController.router = router
+    
+    let modelController = AddReasonModelController()
+    modelController.viewController = viewController
+    viewController.modelController = modelController
   }
   
 }

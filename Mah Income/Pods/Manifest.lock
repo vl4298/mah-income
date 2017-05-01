@@ -1,0 +1,20 @@
+PODS:
+  - PopupDialog (0.5.4)
+  - Realm (2.6.2):
+    - Realm/Headers (= 2.6.2)
+  - Realm/Headers (2.6.2)
+  - RealmSwift (2.6.2):
+    - Realm (= 2.6.2)
+
+DEPENDENCIES:
+  - PopupDialog (~> 0.5)
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
+  Realm: 29222766425b9f831228f81b63f0e38a97a4d700
+  RealmSwift: d161a80f96cb91ae88391a7d5a9cf08024a7bc8e
+
+PODFILE CHECKSUM: b53d396a199df67c605aac499b0251b743c9bf83
+
+COCOAPODS: 1.1.1

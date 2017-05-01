@@ -32,7 +32,7 @@ class ReasonTableViewCell: UITableViewCell {
     commentLabel.isHidden = false
   }
   
-  func configureData(model: ReasonViewModel) {
+  func configureData(model: ReasonModel) {
     titleLabel.text = model.title
     
     if let comment = model.comment {

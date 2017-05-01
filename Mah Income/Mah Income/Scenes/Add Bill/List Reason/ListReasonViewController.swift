@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol ListReasonViewProtocol: class {
-  func listReason(controller: ListReasonViewController, didSelectReason reason: ReasonViewModel)
+  func listReason(controller: ListReasonViewController, didSelectReason reason: ReasonModel)
 }
 
-class ListReasonViewController: UIViewController {
+class ListReasonViewController: UIViewController, NotificationPresentable {
   
   @IBOutlet weak var tableView: UITableView!
   
   var router: ListReasonRouter!
+  var reasons: Results<ReasonModel>?
+  var modelController: ListReasonModelController!
   weak var delegate: ListReasonViewProtocol!
   
   lazy var tableFooterView: UIView = {
@@ -48,6 +51,8 @@ class ListReasonViewController: UIViewController {
     tableView.rowHeight = UITableViewAutomaticDimension
     tableView.estimatedRowHeight = 150.0
     tableView.tableFooterView = tableFooterView
+    
+    modelController.fetchAllReason()
   }
   
   override var prefersStatusBarHidden: Bool {
@@ -60,8 +65,7 @@ class ListReasonViewController: UIViewController {
   
   func handlerCellTap(sender: UIButton) {
     let buttonTag = sender.tag
-    let model = TestData.AddReason.value[buttonTag]
-    delegate.listReason(controller: self, didSelectReason: model)
+    delegate.listReason(controller: self, didSelectReason: reasons![buttonTag])
   }
   
 }
@@ -69,13 +73,13 @@ class ListReasonViewController: UIViewController {
 extension ListReasonViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return TestData.AddReason.value.count
+    return reasons?.count ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ReasonTableViewCell") as! ReasonTableViewCell
     
-    let model = TestData.AddReason.value[indexPath.row]
+    let model = reasons![indexPath.row]
     cell.configureData(model: model)
     
     cell.underlineButton.addTarget(self, action: #selector(self.handlerCellTap(sender:)), for: .touchUpInside)
@@ -88,7 +92,24 @@ extension ListReasonViewController: UITableViewDataSource {
 
 extension ListReasonViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print("did select")
-    delegate.listReason(controller: self, didSelectReason: TestData.AddReason.value[indexPath.row])
+    delegate.listReason(controller: self, didSelectReason: reasons![indexPath.row])
   }
 }
+
+extension ListReasonViewController {
+  
+  func reloadData(listReason: Results<ReasonModel>) {
+    reasons = listReason
+    self.tableView.reloadData()
+  }
+  
+}
+
+extension ListReasonViewController: AddReasonViewControllerDelegate {
+  func didAddNewReason(viewController: AddReasonViewController) {
+    modelController.fetchAllReason()
+  }
+}
+
+
+

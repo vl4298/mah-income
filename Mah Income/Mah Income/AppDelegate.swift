@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let containerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(type: ContainerViewController.self)!
     
     window?.rootViewController = containerVC
+    
+//    PaymentHelper.deleteAllPayment()
     
     return true
   }

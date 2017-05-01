@@ -21,5 +21,10 @@ class CategoryConfigurator {
     
     router.viewController = viewController
     viewController.router = router
+    
+    let modelController = CategoryModelController()
+    viewController.modelController = modelController
+    
+    modelController.viewController = viewController
   }
 }

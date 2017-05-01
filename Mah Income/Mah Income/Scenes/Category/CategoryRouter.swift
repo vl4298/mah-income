@@ -12,9 +12,13 @@ class CategoryRouter {
   
   weak var viewController: CategoryViewController!
   
-  func addAddUpdateCategoryScene() {
+  func addAddUpdateCategoryScene(isUpdate: Bool = false, category: CategoryModel? = nil) {
     let addUpdateCategoryVC = viewController.storyboard!.instantiateViewController(type: AddUpdateCategoryViewController.self)!
     AddUpdateCategoryConfigurator.sharedInstance.configure(viewController: addUpdateCategoryVC)
+    
+    addUpdateCategoryVC.delegate = viewController
+    addUpdateCategoryVC.isAimmingUpdate = isUpdate
+    addUpdateCategoryVC.updateCategory = category
     
     viewController.addChildViewController(addUpdateCategoryVC)
     viewController.view.addSubview(addUpdateCategoryVC.view)

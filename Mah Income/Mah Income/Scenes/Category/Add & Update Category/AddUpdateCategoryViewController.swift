@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol AddUpdateCategoryViewControllerDelegate: class {
+  func didAddNewCategory(viewController: AddUpdateCategoryViewController)
+  func didUpdateNewCategory(viewController: AddUpdateCategoryViewController)
+}
+
 class AddUpdateCategoryViewController: UIViewController {
   
   @IBOutlet weak var categoryTextfield: UITextField!
@@ -15,11 +20,21 @@ class AddUpdateCategoryViewController: UIViewController {
   @IBOutlet weak var cancelButton: UIButton!
   
   var router: AddUpdateCategoryRouter!
+  var modelController: AddUpdateCategoryModelController!
+  weak var delegate: AddUpdateCategoryViewControllerDelegate!
   var isAimmingUpdate = false
+  var updateCategory: CategoryModel?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    if isAimmingUpdate {
+      addupdateButton.setTitle("update", for: .normal)
+      categoryTextfield.text = updateCategory!._name
+    } else {
+      addupdateButton.setTitle("add", for: .normal)
+    }
+
   }
   
   @IBAction func cancelHandler(sender: UIButton) {
@@ -27,7 +42,24 @@ class AddUpdateCategoryViewController: UIViewController {
   }
   
   @IBAction func addUpdateHandler(sender: UIButton) {
-    
+    if isAimmingUpdate {
+      modelController.update(category: updateCategory!, updateName: categoryTextfield.text!)
+    } else {
+      modelController.addCategory(name: categoryTextfield.text!)
+    }
+  }
+  
+}
+
+extension AddUpdateCategoryViewController {
+  
+  func presentError(des: String) {
+    print(des)
+  }
+  
+  func didAddNewCategory() {
+    delegate.didAddNewCategory(viewController: self)
+    router.transitionBackToListCategory()
   }
   
 }

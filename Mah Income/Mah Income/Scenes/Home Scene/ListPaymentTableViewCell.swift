@@ -23,10 +23,16 @@ class ListPaymentTableViewCell: UITableViewCell {
   }
   
   func configure(payment: PaymentModel) {
-    dateLabel.text = ApplicationManager.dateFormatter.string(from: payment.date)
-    categoryLabel.text = payment.category
-    subCategoryLabel.text = payment.subCategory
-    amountLabel.text = "$\(payment.amount)"
+    dateLabel.text = ApplicationManager.dateFormatter.string(from: payment.date as Date)
+    categoryLabel.text = payment.category!._name
+    
+    var reason = ""
+    if let r = payment.reason {
+      reason = reason + r.title
+      reason = reason + (r.comment == nil ? "" : " - \(r.comment!)")
+    }
+    subCategoryLabel.text = reason
+    amountLabel.text = "$\(payment.value)"
   }
   
   func didSelectCell() {

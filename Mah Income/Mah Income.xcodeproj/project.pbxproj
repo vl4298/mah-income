@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4B3E41127F23CBDCACEE86 /* Pods_Mah_Income.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AE118516F636680390297E /* Pods_Mah_Income.framework */; };
 		CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F5591EA6F9A70000227A /* GradientView.swift */; };
 		CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55B1EA6FC280000227A /* MenuViewController.swift */; };
 		CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02F55E1EA6FC560000227A /* ContainerViewController.swift */; };
 		CD0477CC1EAC5C64006F8304 /* ListPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */; };
-		CD0477CE1EAC5D24006F8304 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */; };
 		CD0477D01EAC5E42006F8304 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0477CF1EAC5E42006F8304 /* ApplicationManager.swift */; };
+		CD0ADCCA1EB6BA08009A617B /* AddPaymentModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCC91EB6BA08009A617B /* AddPaymentModelController.swift */; };
+		CD0ADCCD1EB6BFB5009A617B /* ReasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCCC1EB6BFB5009A617B /* ReasonModel.swift */; };
+		CD0ADCCF1EB6C0AA009A617B /* ReasonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCCE1EB6C0AA009A617B /* ReasonHelper.swift */; };
+		CD0ADCD11EB6C15D009A617B /* ReasonWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCD01EB6C15D009A617B /* ReasonWorker.swift */; };
+		CD0ADCD31EB6C274009A617B /* ListReasonModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCD21EB6C274009A617B /* ListReasonModelController.swift */; };
+		CD0ADCD51EB6C3E2009A617B /* AddReasonModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0ADCD41EB6C3E2009A617B /* AddReasonModelController.swift */; };
 		CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AE3A71EA46514007A3798 /* PassthroughView.swift */; };
+		CD0B07251EB79E6100A3A1C3 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B07241EB79E6100A3A1C3 /* PaymentModel.swift */; };
+		CD0B07271EB79F6B00A3A1C3 /* PaymentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B07261EB79F6B00A3A1C3 /* PaymentHelper.swift */; };
+		CD0B07291EB79FE700A3A1C3 /* PaymentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B07281EB79FE700A3A1C3 /* PaymentWorker.swift */; };
+		CD0B072B1EB7B48F00A3A1C3 /* ListPaymentModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B072A1EB7B48F00A3A1C3 /* ListPaymentModelController.swift */; };
+		CD0B072D1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B072C1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift */; };
 		CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */; };
 		CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */; };
 		CD44A4DC1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */; };
 		CD44A4DE1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */; };
 		CD44A4E01EB3BC12003992DE /* CategoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */; };
+		CD44A4E51EB3D898003992DE /* RealmBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4E41EB3D898003992DE /* RealmBaseHelper.swift */; };
+		CD44A4E91EB3DAAC003992DE /* CategoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4E81EB3DAAC003992DE /* CategoryHelper.swift */; };
+		CD44A4EB1EB3DC59003992DE /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4EA1EB3DC59003992DE /* CategoryModel.swift */; };
+		CD44A4ED1EB3E153003992DE /* CategoryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4EC1EB3E153003992DE /* CategoryWorker.swift */; };
+		CD44A4F31EB41EF6003992DE /* CategoryModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4F21EB41EF6003992DE /* CategoryModelController.swift */; };
+		CD44A4F51EB4215B003992DE /* AddUpdateCategoryModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4F41EB4215B003992DE /* AddUpdateCategoryModelController.swift */; };
 		CD583C611EA050CD000D624A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C601EA050CD000D624A /* UIColor.swift */; };
 		CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C621EA05C83000D624A /* MM3DButton.swift */; };
 		CD583C651EA06A6D000D624A /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C641EA06A6D000D624A /* TestData.swift */; };
@@ -32,7 +49,6 @@
 		CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */; };
 		CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */; };
 		CD77E2BE1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */; };
-		CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */; };
 		CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C11EA56DBA004CC7F3 /* UIView.swift */; };
 		CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C41EA5930F004CC7F3 /* ListReasonConfigurator.swift */; };
 		CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77E2C51EA5930F004CC7F3 /* ListReasonRouter.swift */; };
@@ -64,18 +80,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AE118516F636680390297E /* Pods_Mah_Income.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mah_Income.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FD7E38E748826A446C9D37 /* Pods-Mah Income.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mah Income.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mah Income/Pods-Mah Income.debug.xcconfig"; sourceTree = "<group>"; };
 		CD02F5591EA6F9A70000227A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		CD02F55B1EA6FC280000227A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD02F55E1EA6FC560000227A /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentTableViewCell.swift; sourceTree = "<group>"; };
-		CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		CD0477CF1EAC5E42006F8304 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		CD0ADCC91EB6BA08009A617B /* AddPaymentModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentModelController.swift; sourceTree = "<group>"; };
+		CD0ADCCC1EB6BFB5009A617B /* ReasonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonModel.swift; sourceTree = "<group>"; };
+		CD0ADCCE1EB6C0AA009A617B /* ReasonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonHelper.swift; sourceTree = "<group>"; };
+		CD0ADCD01EB6C15D009A617B /* ReasonWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonWorker.swift; sourceTree = "<group>"; };
+		CD0ADCD21EB6C274009A617B /* ListReasonModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonModelController.swift; sourceTree = "<group>"; };
+		CD0ADCD41EB6C3E2009A617B /* AddReasonModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReasonModelController.swift; sourceTree = "<group>"; };
 		CD0AE3A71EA46514007A3798 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
+		CD0B07241EB79E6100A3A1C3 /* PaymentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		CD0B07261EB79F6B00A3A1C3 /* PaymentHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHelper.swift; sourceTree = "<group>"; };
+		CD0B07281EB79FE700A3A1C3 /* PaymentWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWorker.swift; sourceTree = "<group>"; };
+		CD0B072A1EB7B48F00A3A1C3 /* ListPaymentModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentModelController.swift; sourceTree = "<group>"; };
+		CD0B072C1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentConfigurator.swift; sourceTree = "<group>"; };
 		CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryViewController.swift; sourceTree = "<group>"; };
 		CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryRouter.swift; sourceTree = "<group>"; };
 		CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryConfigurator.swift; sourceTree = "<group>"; };
 		CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryConfigurator.swift; sourceTree = "<group>"; };
+		CD44A4E41EB3D898003992DE /* RealmBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmBaseHelper.swift; sourceTree = "<group>"; };
+		CD44A4E81EB3DAAC003992DE /* CategoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHelper.swift; sourceTree = "<group>"; };
+		CD44A4EA1EB3DC59003992DE /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		CD44A4EC1EB3E153003992DE /* CategoryWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryWorker.swift; sourceTree = "<group>"; };
+		CD44A4F21EB41EF6003992DE /* CategoryModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModelController.swift; sourceTree = "<group>"; };
+		CD44A4F41EB4215B003992DE /* AddUpdateCategoryModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryModelController.swift; sourceTree = "<group>"; };
 		CD583C601EA050CD000D624A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD583C621EA05C83000D624A /* MM3DButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM3DButton.swift; sourceTree = "<group>"; };
 		CD583C641EA06A6D000D624A /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
@@ -91,7 +125,6 @@
 		CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 		CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLayoutAttribute.swift; sourceTree = "<group>"; };
 		CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryReasonViewModel.swift; sourceTree = "<group>"; };
 		CD77E2C11EA56DBA004CC7F3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CD77E2C41EA5930F004CC7F3 /* ListReasonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonConfigurator.swift; sourceTree = "<group>"; };
 		CD77E2C51EA5930F004CC7F3 /* ListReasonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReasonRouter.swift; sourceTree = "<group>"; };
@@ -120,6 +153,7 @@
 		CDC494061E9F12CF0091E58F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		E47F009DF1DEB58BEBDC6DD1 /* Pods-Mah Income.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mah Income.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mah Income/Pods-Mah Income.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +161,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4B3E41127F23CBDCACEE86 /* Pods_Mah_Income.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4DAB9260D4C1AA133A46C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42AE118516F636680390297E /* Pods_Mah_Income.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD02F5581EA6F86C0000227A /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +194,16 @@
 			path = "Parent Controller ";
 			sourceTree = "<group>";
 		};
+		CD0ADCCB1EB6BFA9009A617B /* Reason */ = {
+			isa = PBXGroup;
+			children = (
+				CD0ADCCC1EB6BFB5009A617B /* ReasonModel.swift */,
+				CD0ADCCE1EB6C0AA009A617B /* ReasonHelper.swift */,
+				CD0ADCD01EB6C15D009A617B /* ReasonWorker.swift */,
+			);
+			path = Reason;
+			sourceTree = "<group>";
+		};
 		CD0AE3A01EA45BE5007A3798 /* Add Bill */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,11 +212,21 @@
 				CD77E2B91EA55AF8004CC7F3 /* AddPaymentViewController.swift */,
 				CD77E2BB1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift */,
 				CD77E2BD1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift */,
-				CD77E2BF1EA55ED1004CC7F3 /* CategoryReasonViewModel.swift */,
 				CD77E2D51EA593C9004CC7F3 /* AddPaymentRouter.swift */,
 				CD77E2D71EA59424004CC7F3 /* AddPaymentConfigurator.swift */,
+				CD0ADCC91EB6BA08009A617B /* AddPaymentModelController.swift */,
 			);
 			path = "Add Bill";
+			sourceTree = "<group>";
+		};
+		CD0B07231EB79E5200A3A1C3 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CD0B07241EB79E6100A3A1C3 /* PaymentModel.swift */,
+				CD0B07261EB79F6B00A3A1C3 /* PaymentHelper.swift */,
+				CD0B07281EB79FE700A3A1C3 /* PaymentWorker.swift */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		CD44A4D61EB3BA77003992DE /* Add & Update Category */ = {
@@ -172,8 +235,38 @@
 				CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */,
 				CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */,
 				CD44A4DD1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift */,
+				CD44A4F41EB4215B003992DE /* AddUpdateCategoryModelController.swift */,
 			);
 			path = "Add & Update Category";
+			sourceTree = "<group>";
+		};
+		CD44A4E11EB3D82C003992DE /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				CD0B07231EB79E5200A3A1C3 /* Payment */,
+				CD0ADCCB1EB6BFA9009A617B /* Reason */,
+				CD44A4E31EB3D88B003992DE /* Realm */,
+				CD44A4E21EB3D837003992DE /* Category */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		CD44A4E21EB3D837003992DE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CD44A4E81EB3DAAC003992DE /* CategoryHelper.swift */,
+				CD44A4EA1EB3DC59003992DE /* CategoryModel.swift */,
+				CD44A4EC1EB3E153003992DE /* CategoryWorker.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CD44A4E31EB3D88B003992DE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CD44A4E41EB3D898003992DE /* RealmBaseHelper.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		CD583C5F1EA050C5000D624A /* Extension */ = {
@@ -191,6 +284,8 @@
 			children = (
 				CD6F3CEB1E99E9EE005B42A5 /* Mah Income */,
 				CD6F3CEA1E99E9EE005B42A5 /* Products */,
+				EE34B36C25777FB12A7B3789 /* Pods */,
+				0A4DAB9260D4C1AA133A46C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +300,7 @@
 		CD6F3CEB1E99E9EE005B42A5 /* Mah Income */ = {
 			isa = PBXGroup;
 			children = (
+				CD44A4E11EB3D82C003992DE /* Workers */,
 				CD77E2D91EA595AF004CC7F3 /* TransitionAnimator */,
 				CD77E2B61EA552CB004CC7F3 /* CollectionView Layout */,
 				CD9381B31EA314920031D554 /* Protocols */,
@@ -252,6 +348,7 @@
 				CD77E2C61EA5930F004CC7F3 /* ListReasonViewController.swift */,
 				CD77E2C71EA5930F004CC7F3 /* ReasonTableViewCell.swift */,
 				CD77E2C81EA5930F004CC7F3 /* ReasonViewModel.swift */,
+				CD0ADCD21EB6C274009A617B /* ListReasonModelController.swift */,
 			);
 			path = "List Reason";
 			sourceTree = "<group>";
@@ -262,6 +359,7 @@
 				CD77E2CF1EA5934F004CC7F3 /* AddReasonConfigurator.swift */,
 				CD77E2D01EA5934F004CC7F3 /* AddReasonRouter.swift */,
 				CD77E2D11EA5934F004CC7F3 /* AddReasonViewController.swift */,
+				CD0ADCD41EB6C3E2009A617B /* AddReasonModelController.swift */,
 			);
 			path = "Add Reason";
 			sourceTree = "<group>";
@@ -291,6 +389,7 @@
 				CD78D60E1EB2C9050011C39D /* CategoryTableViewCell.swift */,
 				CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */,
 				CD44A4DF1EB3BC12003992DE /* CategoryConfigurator.swift */,
+				CD44A4F21EB41EF6003992DE /* CategoryModelController.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -314,7 +413,8 @@
 			children = (
 				CD9381B11EA314870031D554 /* ListPaymentViewController.swift */,
 				CD0477CB1EAC5C64006F8304 /* ListPaymentTableViewCell.swift */,
-				CD0477CD1EAC5D24006F8304 /* PaymentModel.swift */,
+				CD0B072A1EB7B48F00A3A1C3 /* ListPaymentModelController.swift */,
+				CD0B072C1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift */,
 			);
 			name = Home;
 			path = "Home Scene";
@@ -373,6 +473,15 @@
 			path = Analyze;
 			sourceTree = "<group>";
 		};
+		EE34B36C25777FB12A7B3789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69FD7E38E748826A446C9D37 /* Pods-Mah Income.debug.xcconfig */,
+				E47F009DF1DEB58BEBDC6DD1 /* Pods-Mah Income.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,9 +489,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6F3CFB1E99E9EE005B42A5 /* Build configuration list for PBXNativeTarget "Mah Income" */;
 			buildPhases = (
+				14C01F1E4C14A4D58BD8017D /* [CP] Check Pods Manifest.lock */,
 				CD6F3CE51E99E9EE005B42A5 /* Sources */,
 				CD6F3CE61E99E9EE005B42A5 /* Frameworks */,
 				CD6F3CE71E99E9EE005B42A5 /* Resources */,
+				D4ED5AAC1694EFED9C1F38B8 /* [CP] Embed Pods Frameworks */,
+				FD7F98DDAD898FD344018E44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,6 +558,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C01F1E4C14A4D58BD8017D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4ED5AAC1694EFED9C1F38B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mah Income/Pods-Mah Income-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7F98DDAD898FD344018E44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mah Income/Pods-Mah Income-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD6F3CE51E99E9EE005B42A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -454,21 +614,27 @@
 				CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */,
 				CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */,
 				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
+				CD0ADCCF1EB6C0AA009A617B /* ReasonHelper.swift in Sources */,
+				CD0B07271EB79F6B00A3A1C3 /* PaymentHelper.swift in Sources */,
 				CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */,
-				CD77E2C01EA55ED1004CC7F3 /* CategoryReasonViewModel.swift in Sources */,
+				CD44A4EB1EB3DC59003992DE /* CategoryModel.swift in Sources */,
 				CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */,
 				CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */,
 				CD583C611EA050CD000D624A /* UIColor.swift in Sources */,
+				CD0B072D1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift in Sources */,
 				CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */,
 				CD77E2DB1EA595E5004CC7F3 /* LinearTransitionAnimator.swift in Sources */,
+				CD0B072B1EB7B48F00A3A1C3 /* ListPaymentModelController.swift in Sources */,
+				CD44A4ED1EB3E153003992DE /* CategoryWorker.swift in Sources */,
 				CD0AE3A81EA46514007A3798 /* PassthroughView.swift in Sources */,
-				CD0477CE1EAC5D24006F8304 /* PaymentModel.swift in Sources */,
 				CD9381B51EA314990031D554 /* Protocols.swift in Sources */,
 				CD77E2BE1EA55BB6004CC7F3 /* CategoryCollectionViewCell.swift in Sources */,
 				CD44A4E01EB3BC12003992DE /* CategoryConfigurator.swift in Sources */,
 				CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */,
 				CD78D60F1EB2C9050011C39D /* CategoryTableViewCell.swift in Sources */,
+				CD0ADCD31EB6C274009A617B /* ListReasonModelController.swift in Sources */,
 				CD583C651EA06A6D000D624A /* TestData.swift in Sources */,
+				CD44A4F31EB41EF6003992DE /* CategoryModelController.swift in Sources */,
 				CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */,
 				CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */,
 				CD77E2D31EA5934F004CC7F3 /* AddReasonRouter.swift in Sources */,
@@ -479,7 +645,9 @@
 				CD7938191EAEDD2E00157BBD /* CategoryViewController.swift in Sources */,
 				CD0477D01EAC5E42006F8304 /* ApplicationManager.swift in Sources */,
 				CD9381B21EA314870031D554 /* ListPaymentViewController.swift in Sources */,
+				CD0ADCCA1EB6BA08009A617B /* AddPaymentModelController.swift in Sources */,
 				CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */,
+				CD44A4F51EB4215B003992DE /* AddUpdateCategoryModelController.swift in Sources */,
 				CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */,
 				CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */,
 				CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */,
@@ -488,14 +656,21 @@
 				CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */,
 				CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */,
 				CD7938171EAEDD1A00157BBD /* SettingViewController.swift in Sources */,
+				CD44A4E51EB3D898003992DE /* RealmBaseHelper.swift in Sources */,
 				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
+				CD0ADCCD1EB6BFB5009A617B /* ReasonModel.swift in Sources */,
+				CD0B07251EB79E6100A3A1C3 /* PaymentModel.swift in Sources */,
 				CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */,
 				CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */,
 				CD77E2DD1EA5A182004CC7F3 /* DimmingPresentationController.swift in Sources */,
 				CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */,
+				CD0ADCD51EB6C3E2009A617B /* AddReasonModelController.swift in Sources */,
 				CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */,
 				CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */,
+				CD44A4E91EB3DAAC003992DE /* CategoryHelper.swift in Sources */,
+				CD0ADCD11EB6C15D009A617B /* ReasonWorker.swift in Sources */,
 				CD0477CC1EAC5C64006F8304 /* ListPaymentTableViewCell.swift in Sources */,
+				CD0B07291EB79FE700A3A1C3 /* PaymentWorker.swift in Sources */,
 				CD77E2CC1EA5930F004CC7F3 /* ReasonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +790,7 @@
 		};
 		CD6F3CFC1E99E9EE005B42A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FD7E38E748826A446C9D37 /* Pods-Mah Income.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
@@ -628,6 +804,7 @@
 		};
 		CD6F3CFD1E99E9EE005B42A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47F009DF1DEB58BEBDC6DD1 /* Pods-Mah Income.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
