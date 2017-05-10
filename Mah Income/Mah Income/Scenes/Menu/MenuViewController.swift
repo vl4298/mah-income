@@ -47,6 +47,12 @@ class MenuViewController: UIViewController {
     selectedMenu = menuData.first!
   }
   
+  @IBAction func handleButton(sender: UIButton) {
+    if parent! is MenuContainer {
+      (parent! as! MenuContainer).dismissMenu()
+    }
+  }
+  
 }
 
 extension MenuViewController: MenuProtocol {

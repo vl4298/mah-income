@@ -16,7 +16,7 @@ class ContainerViewController: UIViewController {
   
   lazy var menuButton: UIButton = {
     let button = UIButton()
-    button.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+    button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
     button.layer.cornerRadius = button.frame.width/2
     button.backgroundColor = AppColor.menuButton
     button.layer.shadowColor = AppColor.menuButtonShadow.cgColor
@@ -125,6 +125,7 @@ extension ContainerViewController: ContainerProtocol {
       CategoryConfigurator.sharedInstance.configure(viewController: vc as! CategoryViewController)
     case "AnalyzeViewController":
       vc = self.storyboard!.instantiateViewController(type: AnalyzeViewController.self)!
+      AnalyzeConfigurator.sharedInstance.configure(viewController: vc as! AnalyzeViewController)
     case "SettingViewController":
       vc = self.storyboard!.instantiateViewController(type: SettingViewController.self)!
       
@@ -151,10 +152,13 @@ extension ContainerViewController: ContainerProtocol {
     maskLayer.path = circleMaskPathFinal.cgPath
     vc.view.layer.mask = maskLayer
     
-    let maskLayerAnimation = CABasicAnimation(keyPath: "path")
+    let maskLayerAnimation = CASpringAnimation(keyPath: "path")
     maskLayerAnimation.fromValue = circleMaskPathInitial.cgPath
     maskLayerAnimation.toValue = circleMaskPathFinal.cgPath
     maskLayerAnimation.duration = 0.6
+    maskLayerAnimation.mass = 30.0
+    maskLayerAnimation.damping = 15.0
+    maskLayerAnimation.initialVelocity = 2.0
     maskLayerAnimation.delegate = self
     maskLayer.add(maskLayerAnimation, forKey: "path")
   }

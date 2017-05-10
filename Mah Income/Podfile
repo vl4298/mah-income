@@ -4,7 +4,10 @@ use_frameworks!
 
 target 'Mah Income' do
   pod 'RealmSwift'
-pod 'PopupDialog', '~> 0.5'		
+pod 'PopupDialog', '~> 0.5'
+pod 'Charts'
+pod 'ChartsRealm'	
+pod 'Fakery'
 end
 
 post_install do |installer|

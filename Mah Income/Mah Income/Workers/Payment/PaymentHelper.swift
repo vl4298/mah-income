@@ -72,7 +72,15 @@ extension PaymentHelper {
 //  }
   
   func getAllPayment() -> Results<PaymentModel> {
-    return realm.objects(PaymentModel.self)
+    return realm.objects(PaymentModel.self).sorted(byKeyPath: "date", ascending: false)
+  }
+  
+  func getPaymentWith(filter: String) -> Results<PaymentModel> {
+    return realm.objects(PaymentModel.self).filter(filter).sorted(byKeyPath: "date", ascending: false)
+  }
+  
+  func getPaymentWith(filter: NSPredicate) -> Results<PaymentModel> {
+    return realm.objects(PaymentModel.self).filter(filter).sorted(byKeyPath: "date", ascending: false)
   }
   
   static func deleteAllPayment() {
@@ -83,5 +91,6 @@ extension PaymentHelper {
     }
     print("did delete")
   }
+  
   
 }

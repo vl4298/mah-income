@@ -23,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     window?.rootViewController = containerVC
     
+//    TestData.insertCategory(number: 20)
+//    TestData.insertReason(number: 20)
+//    TestData.insertPayment(number: 100)
+    
 //    PaymentHelper.deleteAllPayment()
     
     return true

@@ -1,4 +1,11 @@
 PODS:
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - ChartsRealm (3.0.2):
+    - Charts (~> 3.0.2)
+    - RealmSwift (~> 2.4)
+  - Fakery (2.0.0)
   - PopupDialog (0.5.4)
   - Realm (2.6.2):
     - Realm/Headers (= 2.6.2)
@@ -7,14 +14,20 @@ PODS:
     - Realm (= 2.6.2)
 
 DEPENDENCIES:
+  - Charts
+  - ChartsRealm
+  - Fakery
   - PopupDialog (~> 0.5)
   - RealmSwift
 
 SPEC CHECKSUMS:
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  ChartsRealm: ed0332fd409298188a2b71e9548604165c987d42
+  Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
   Realm: 29222766425b9f831228f81b63f0e38a97a4d700
   RealmSwift: d161a80f96cb91ae88391a7d5a9cf08024a7bc8e
 
-PODFILE CHECKSUM: b53d396a199df67c605aac499b0251b743c9bf83
+PODFILE CHECKSUM: 811ed5ab4c8e7911a419514246e5a224e3826b93
 
 COCOAPODS: 1.1.1

@@ -25,6 +25,8 @@
 		CD0B07291EB79FE700A3A1C3 /* PaymentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B07281EB79FE700A3A1C3 /* PaymentWorker.swift */; };
 		CD0B072B1EB7B48F00A3A1C3 /* ListPaymentModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B072A1EB7B48F00A3A1C3 /* ListPaymentModelController.swift */; };
 		CD0B072D1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B072C1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift */; };
+		CD28980A1EC2A3C500361C33 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2898091EC2A3C500361C33 /* BarChart.swift */; };
+		CD318DD91EBC27B0004E9E31 /* AnalyzeOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD318DD81EBC27B0004E9E31 /* AnalyzeOptionViewController.swift */; };
 		CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */; };
 		CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */; };
 		CD44A4DC1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */; };
@@ -36,6 +38,9 @@
 		CD44A4ED1EB3E153003992DE /* CategoryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4EC1EB3E153003992DE /* CategoryWorker.swift */; };
 		CD44A4F31EB41EF6003992DE /* CategoryModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4F21EB41EF6003992DE /* CategoryModelController.swift */; };
 		CD44A4F51EB4215B003992DE /* AddUpdateCategoryModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44A4F41EB4215B003992DE /* AddUpdateCategoryModelController.swift */; };
+		CD4532E71EC24C08005CBE22 /* AnalyzeModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4532E61EC24C08005CBE22 /* AnalyzeModelController.swift */; };
+		CD4532EA1EC25371005CBE22 /* AnalyzeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4532E91EC25371005CBE22 /* AnalyzeDetailViewController.swift */; };
+		CD4920BF1EB9498E00BBAEC0 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4920BE1EB9498E00BBAEC0 /* AnalyzeViewController.swift */; };
 		CD583C611EA050CD000D624A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C601EA050CD000D624A /* UIColor.swift */; };
 		CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C621EA05C83000D624A /* MM3DButton.swift */; };
 		CD583C651EA06A6D000D624A /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD583C641EA06A6D000D624A /* TestData.swift */; };
@@ -76,7 +81,18 @@
 		CDC4940A1E9F12CF0091E58F /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDC494051E9F12CF0091E58F /* digital-7.ttf */; };
 		CDC4940B1E9F12CF0091E58F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDC494061E9F12CF0091E58F /* readme.txt */; };
 		CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */; };
-		CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */; };
+		CDCFB1FF1EC0D85C006EB753 /* OptionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB1FE1EC0D85C006EB753 /* OptionTwoViewController.swift */; };
+		CDCFB2011EC0D865006EB753 /* OptionThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2001EC0D865006EB753 /* OptionThreeViewController.swift */; };
+		CDCFB2031EC0D86D006EB753 /* OptionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2021EC0D86D006EB753 /* OptionFourViewController.swift */; };
+		CDCFB2051EC0DAE2006EB753 /* AnalyzeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2041EC0DAE2006EB753 /* AnalyzeRouter.swift */; };
+		CDCFB2071EC0DC21006EB753 /* AnalyzeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2061EC0DC21006EB753 /* AnalyzeConfigurator.swift */; };
+		CDCFB20C1EC0E4B3006EB753 /* OptionModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB20B1EC0E4B3006EB753 /* OptionModelController.swift */; };
+		CDCFB20E1EC11A2B006EB753 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB20D1EC11A2B006EB753 /* CGFloat.swift */; };
+		CDCFB2101EC13525006EB753 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB20F1EC13525006EB753 /* Double.swift */; };
+		CDCFB2121EC240B4006EB753 /* OptionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2111EC240B4006EB753 /* OptionOneViewController.swift */; };
+		CDCFB2151EC240DA006EB753 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFB2141EC240DA006EB753 /* PieChart.swift */; };
+		CDDD79541EC25E45001E8440 /* TimeSlidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD79521EC25E45001E8440 /* TimeSlidebarView.swift */; };
+		CDDD79551EC25E45001E8440 /* TimeSlidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDD79531EC25E45001E8440 /* TimeSlidebarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +115,8 @@
 		CD0B07281EB79FE700A3A1C3 /* PaymentWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentWorker.swift; sourceTree = "<group>"; };
 		CD0B072A1EB7B48F00A3A1C3 /* ListPaymentModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentModelController.swift; sourceTree = "<group>"; };
 		CD0B072C1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentConfigurator.swift; sourceTree = "<group>"; };
+		CD2898091EC2A3C500361C33 /* BarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		CD318DD81EBC27B0004E9E31 /* AnalyzeOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeOptionViewController.swift; sourceTree = "<group>"; };
 		CD44A4D71EB3BA88003992DE /* AddUpdateCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryViewController.swift; sourceTree = "<group>"; };
 		CD44A4D91EB3BB45003992DE /* CategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		CD44A4DB1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryRouter.swift; sourceTree = "<group>"; };
@@ -110,6 +128,9 @@
 		CD44A4EC1EB3E153003992DE /* CategoryWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryWorker.swift; sourceTree = "<group>"; };
 		CD44A4F21EB41EF6003992DE /* CategoryModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModelController.swift; sourceTree = "<group>"; };
 		CD44A4F41EB4215B003992DE /* AddUpdateCategoryModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdateCategoryModelController.swift; sourceTree = "<group>"; };
+		CD4532E61EC24C08005CBE22 /* AnalyzeModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeModelController.swift; sourceTree = "<group>"; };
+		CD4532E91EC25371005CBE22 /* AnalyzeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeDetailViewController.swift; sourceTree = "<group>"; };
+		CD4920BE1EB9498E00BBAEC0 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		CD583C601EA050CD000D624A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD583C621EA05C83000D624A /* MM3DButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM3DButton.swift; sourceTree = "<group>"; };
 		CD583C641EA06A6D000D624A /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
@@ -152,7 +173,18 @@
 		CDC494051E9F12CF0091E58F /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		CDC494061E9F12CF0091E58F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		CDCC04D81EA98E8900BFBD43 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		CDCFB1FE1EC0D85C006EB753 /* OptionTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTwoViewController.swift; sourceTree = "<group>"; };
+		CDCFB2001EC0D865006EB753 /* OptionThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionThreeViewController.swift; sourceTree = "<group>"; };
+		CDCFB2021EC0D86D006EB753 /* OptionFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionFourViewController.swift; sourceTree = "<group>"; };
+		CDCFB2041EC0DAE2006EB753 /* AnalyzeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeRouter.swift; sourceTree = "<group>"; };
+		CDCFB2061EC0DC21006EB753 /* AnalyzeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeConfigurator.swift; sourceTree = "<group>"; };
+		CDCFB20B1EC0E4B3006EB753 /* OptionModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionModelController.swift; sourceTree = "<group>"; };
+		CDCFB20D1EC11A2B006EB753 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		CDCFB20F1EC13525006EB753 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		CDCFB2111EC240B4006EB753 /* OptionOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionOneViewController.swift; sourceTree = "<group>"; };
+		CDCFB2141EC240DA006EB753 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		CDDD79521EC25E45001E8440 /* TimeSlidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlidebarView.swift; sourceTree = "<group>"; };
+		CDDD79531EC25E45001E8440 /* TimeSlidebarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSlidebarView.xib; sourceTree = "<group>"; };
 		E47F009DF1DEB58BEBDC6DD1 /* Pods-Mah Income.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mah Income.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mah Income/Pods-Mah Income.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +261,20 @@
 			path = Payment;
 			sourceTree = "<group>";
 		};
+		CD318DD71EBC27A0004E9E31 /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				CDCFB2131EC240C4006EB753 /* Chart */,
+				CD318DD81EBC27B0004E9E31 /* AnalyzeOptionViewController.swift */,
+				CDCFB2111EC240B4006EB753 /* OptionOneViewController.swift */,
+				CDCFB1FE1EC0D85C006EB753 /* OptionTwoViewController.swift */,
+				CDCFB2001EC0D865006EB753 /* OptionThreeViewController.swift */,
+				CDCFB2021EC0D86D006EB753 /* OptionFourViewController.swift */,
+				CDCFB20B1EC0E4B3006EB753 /* OptionModelController.swift */,
+			);
+			path = Option;
+			sourceTree = "<group>";
+		};
 		CD44A4D61EB3BA77003992DE /* Add & Update Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,12 +315,35 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		CD4532E81EC25360005CBE22 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CD4532E91EC25371005CBE22 /* AnalyzeDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CD4920BD1EB9497900BBAEC0 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				CD4532E81EC25360005CBE22 /* Detail */,
+				CD318DD71EBC27A0004E9E31 /* Option */,
+				CD4920BE1EB9498E00BBAEC0 /* AnalyzeViewController.swift */,
+				CDCFB2041EC0DAE2006EB753 /* AnalyzeRouter.swift */,
+				CDCFB2061EC0DC21006EB753 /* AnalyzeConfigurator.swift */,
+				CD4532E61EC24C08005CBE22 /* AnalyzeModelController.swift */,
+			);
+			path = Analyze;
+			sourceTree = "<group>";
+		};
 		CD583C5F1EA050C5000D624A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				CD583C601EA050CD000D624A /* UIColor.swift */,
 				CD9381B61EA318550031D554 /* UIStoryboard.swift */,
 				CD77E2C11EA56DBA004CC7F3 /* UIView.swift */,
+				CDCFB20D1EC11A2B006EB753 /* CGFloat.swift */,
+				CDCFB20F1EC13525006EB753 /* Double.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -323,6 +392,7 @@
 		CD6F3CFE1E99EABB005B42A5 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
+				CDDD79511EC25E15001E8440 /* Slidebar */,
 				CD6F3CFF1E99EACA005B42A5 /* NumberButton.swift */,
 				CD583C621EA05C83000D624A /* MM3DButton.swift */,
 				CD0AE3A71EA46514007A3798 /* PassthroughView.swift */,
@@ -397,9 +467,9 @@
 		CD9381AF1EA314560031D554 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CD4920BD1EB9497900BBAEC0 /* Analyze */,
 				CD7938151EAEDD0800157BBD /* Category */,
 				CD7938141EAEDCFE00157BBD /* Setting */,
-				CDCC04DA1EA99A2300BFBD43 /* Analyze */,
 				CD02F55D1EA6FC560000227A /* Container Controller */,
 				CD02F5581EA6F86C0000227A /* Menu */,
 				CD0AE3A01EA45BE5007A3798 /* Add Bill */,
@@ -465,12 +535,22 @@
 			path = "digital-7";
 			sourceTree = "<group>";
 		};
-		CDCC04DA1EA99A2300BFBD43 /* Analyze */ = {
+		CDCFB2131EC240C4006EB753 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				CDCC04DB1EA99A3000BFBD43 /* AnalyzeViewController.swift */,
+				CDCFB2141EC240DA006EB753 /* PieChart.swift */,
+				CD2898091EC2A3C500361C33 /* BarChart.swift */,
 			);
-			path = Analyze;
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		CDDD79511EC25E15001E8440 /* Slidebar */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD79521EC25E45001E8440 /* TimeSlidebarView.swift */,
+				CDDD79531EC25E45001E8440 /* TimeSlidebarView.xib */,
+			);
+			path = Slidebar;
 			sourceTree = "<group>";
 		};
 		EE34B36C25777FB12A7B3789 /* Pods */ = {
@@ -512,7 +592,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Van Luu";
 				TargetAttributes = {
 					CD6F3CE81E99E9EE005B42A5 = {
@@ -552,6 +632,7 @@
 				CDC494081E9F12CF0091E58F /* digital-7 (mono italic).ttf in Resources */,
 				CD6F3CF21E99E9EE005B42A5 /* Main.storyboard in Resources */,
 				CDC4940B1E9F12CF0091E58F /* readme.txt in Resources */,
+				CDDD79551EC25E45001E8440 /* TimeSlidebarView.xib in Resources */,
 				CDC494071E9F12CF0091E58F /* digital-7 (italic).ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,15 +692,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCFB2151EC240DA006EB753 /* PieChart.swift in Sources */,
 				CD77E2AB1EA53E4D004CC7F3 /* PaddingTextField.swift in Sources */,
 				CD44A4D81EB3BA88003992DE /* AddUpdateCategoryViewController.swift in Sources */,
+				CDCFB20C1EC0E4B3006EB753 /* OptionModelController.swift in Sources */,
 				CDC493FF1E9ED4280091E58F /* Logger.swift in Sources */,
 				CD0ADCCF1EB6C0AA009A617B /* ReasonHelper.swift in Sources */,
 				CD0B07271EB79F6B00A3A1C3 /* PaymentHelper.swift in Sources */,
 				CD02F55A1EA6F9A70000227A /* GradientView.swift in Sources */,
 				CD44A4EB1EB3DC59003992DE /* CategoryModel.swift in Sources */,
+				CDCFB2101EC13525006EB753 /* Double.swift in Sources */,
 				CD02F55C1EA6FC280000227A /* MenuViewController.swift in Sources */,
+				CDCFB2121EC240B4006EB753 /* OptionOneViewController.swift in Sources */,
 				CD77E2D81EA59424004CC7F3 /* AddPaymentConfigurator.swift in Sources */,
+				CDCFB2011EC0D865006EB753 /* OptionThreeViewController.swift in Sources */,
 				CD583C611EA050CD000D624A /* UIColor.swift in Sources */,
 				CD0B072D1EB7B55100A3A1C3 /* ListPaymentConfigurator.swift in Sources */,
 				CD44A4DA1EB3BB45003992DE /* CategoryRouter.swift in Sources */,
@@ -633,26 +719,33 @@
 				CD6F3D001E99EACA005B42A5 /* NumberButton.swift in Sources */,
 				CD78D60F1EB2C9050011C39D /* CategoryTableViewCell.swift in Sources */,
 				CD0ADCD31EB6C274009A617B /* ListReasonModelController.swift in Sources */,
+				CD4532E71EC24C08005CBE22 /* AnalyzeModelController.swift in Sources */,
 				CD583C651EA06A6D000D624A /* TestData.swift in Sources */,
 				CD44A4F31EB41EF6003992DE /* CategoryModelController.swift in Sources */,
 				CD77E2C91EA5930F004CC7F3 /* ListReasonConfigurator.swift in Sources */,
 				CD77E2BC1EA55B1C004CC7F3 /* CategoryLayoutAttribute.swift in Sources */,
 				CD77E2D31EA5934F004CC7F3 /* AddReasonRouter.swift in Sources */,
 				CD6F3CED1E99E9EE005B42A5 /* AppDelegate.swift in Sources */,
+				CDCFB20E1EC11A2B006EB753 /* CGFloat.swift in Sources */,
 				CD77E2CB1EA5930F004CC7F3 /* ListReasonViewController.swift in Sources */,
 				CD77E2D21EA5934F004CC7F3 /* AddReasonConfigurator.swift in Sources */,
 				CD44A4DC1EB3BB7D003992DE /* AddUpdateCategoryRouter.swift in Sources */,
 				CD7938191EAEDD2E00157BBD /* CategoryViewController.swift in Sources */,
 				CD0477D01EAC5E42006F8304 /* ApplicationManager.swift in Sources */,
+				CDDD79541EC25E45001E8440 /* TimeSlidebarView.swift in Sources */,
 				CD9381B21EA314870031D554 /* ListPaymentViewController.swift in Sources */,
 				CD0ADCCA1EB6BA08009A617B /* AddPaymentModelController.swift in Sources */,
 				CD583C631EA05C83000D624A /* MM3DButton.swift in Sources */,
 				CD44A4F51EB4215B003992DE /* AddUpdateCategoryModelController.swift in Sources */,
+				CD4920BF1EB9498E00BBAEC0 /* AnalyzeViewController.swift in Sources */,
 				CD77E2B81EA552E1004CC7F3 /* CardBaseCollectionViewLayout.swift in Sources */,
 				CDCC04D91EA98E8900BFBD43 /* MenuTableViewCell.swift in Sources */,
 				CD77E2CD1EA5930F004CC7F3 /* ReasonViewModel.swift in Sources */,
+				CDCFB2031EC0D86D006EB753 /* OptionFourViewController.swift in Sources */,
+				CDCFB1FF1EC0D85C006EB753 /* OptionTwoViewController.swift in Sources */,
 				CD44A4DE1EB3BB92003992DE /* AddUpdateCategoryConfigurator.swift in Sources */,
 				CD77E2C21EA56DBA004CC7F3 /* UIView.swift in Sources */,
+				CDCFB2051EC0DAE2006EB753 /* AnalyzeRouter.swift in Sources */,
 				CD77E2D61EA593C9004CC7F3 /* AddPaymentRouter.swift in Sources */,
 				CD77E2CA1EA5930F004CC7F3 /* ListReasonRouter.swift in Sources */,
 				CD7938171EAEDD1A00157BBD /* SettingViewController.swift in Sources */,
@@ -660,15 +753,18 @@
 				CDC493FB1E9ED0C10091E58F /* Constant.swift in Sources */,
 				CD0ADCCD1EB6BFB5009A617B /* ReasonModel.swift in Sources */,
 				CD0B07251EB79E6100A3A1C3 /* PaymentModel.swift in Sources */,
-				CDCC04DC1EA99A3000BFBD43 /* AnalyzeViewController.swift in Sources */,
+				CDCFB2071EC0DC21006EB753 /* AnalyzeConfigurator.swift in Sources */,
 				CD02F55F1EA6FC560000227A /* ContainerViewController.swift in Sources */,
 				CD77E2DD1EA5A182004CC7F3 /* DimmingPresentationController.swift in Sources */,
 				CD77E2D41EA5934F004CC7F3 /* AddReasonViewController.swift in Sources */,
 				CD0ADCD51EB6C3E2009A617B /* AddReasonModelController.swift in Sources */,
 				CD9381B71EA318550031D554 /* UIStoryboard.swift in Sources */,
 				CD77E2BA1EA55AF8004CC7F3 /* AddPaymentViewController.swift in Sources */,
+				CD28980A1EC2A3C500361C33 /* BarChart.swift in Sources */,
+				CD318DD91EBC27B0004E9E31 /* AnalyzeOptionViewController.swift in Sources */,
 				CD44A4E91EB3DAAC003992DE /* CategoryHelper.swift in Sources */,
 				CD0ADCD11EB6C15D009A617B /* ReasonWorker.swift in Sources */,
+				CD4532EA1EC25371005CBE22 /* AnalyzeDetailViewController.swift in Sources */,
 				CD0477CC1EAC5C64006F8304 /* ListPaymentTableViewCell.swift in Sources */,
 				CD0B07291EB79FE700A3A1C3 /* PaymentWorker.swift in Sources */,
 				CD77E2CC1EA5930F004CC7F3 /* ReasonTableViewCell.swift in Sources */,
@@ -792,6 +888,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69FD7E38E748826A446C9D37 /* Pods-Mah Income.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
 				INFOPLIST_FILE = "Mah Income/Info.plist";
@@ -806,6 +903,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E47F009DF1DEB58BEBDC6DD1 /* Pods-Mah Income.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
 				INFOPLIST_FILE = "Mah Income/Info.plist";

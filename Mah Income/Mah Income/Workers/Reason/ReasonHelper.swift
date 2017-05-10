@@ -47,6 +47,7 @@ extension ReasonHelper {
     } catch {
       return MahError.cannotDelete
     }
+
   }
   
 //  func categoryNameIsExist(_ name: String) -> Bool {

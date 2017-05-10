@@ -12,7 +12,7 @@ class ApplicationManager {
   
   static let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
-    formatter.dateStyle = .medium
+    formatter.dateFormat = "E, d MMM yyyy HH:mm:ss"
     
     return formatter
   }()

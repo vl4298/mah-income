@@ -8,6 +8,8 @@
 
 import UIKit
 import PopupDialog
+import RealmSwift
+import Charts
 
 // MARK: --------------------ERROR------------------------
 enum MahError {
@@ -149,6 +151,25 @@ protocol CategoryHelperProtocol {
   func deleteCategory(_ category: CategoryModel) -> MahError?
   
   func categoryNameIsExist(_ name: String) -> Bool
+}
+
+// MARK: --------------------???--------------------------
+
+protocol AnalyzeOptionProtocol: class, NotificationPresentable {
+  
+  func reloadData(listCategories: Results<CategoryModel>)
+  func reloadData(listPayments: Results<PaymentModel>)
+  
+}
+
+protocol OptionProtocol {
+  func getAnalyzeData()
+}
+
+// MARK: --------------------CHART--------------------------
+protocol ChartDelegate: class {
+  func pieChartSelected(pieChart: PieChart, value: ChartDataEntry)
+  func barChartSelected(barChart: BarChart, value: ChartDataEntry)
 }
 
 

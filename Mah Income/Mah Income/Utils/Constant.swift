@@ -37,6 +37,11 @@ struct AppColor {
     static let setting = UIColor(rgb: 0x795548)
   }
   
+  struct TimeSliderbar {
+    static let disable = UIColor(rgb: 0x9E9E9E)
+    static let enabled = UIColor(rgb: 0x00695C)
+  }
+  
   static let mainColor = UIColor(rgb: 0xE0E0E0)
   static let menuButton = UIColor(rgb: 0xEEEEEE)
   static let menuButtonShadow = UIColor(rgb: 0xBDBDBD)

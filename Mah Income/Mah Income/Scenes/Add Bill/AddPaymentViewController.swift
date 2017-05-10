@@ -99,27 +99,20 @@ class AddPaymentViewController: UIViewController, NotificationPresentable {
   @IBAction func handleAddButton(sender: UIButton) {
     let value = Double(valueLabel.text!)
     
-    if value != nil, value == 0 {
+    guard let val = value, val > 0 else {
       presentError(des: "Bill must more than 0")
+      return
     }
     
-    if let val = value {
-      
-      modelController.set(value: val)
-      
-      guard let indexPath = collectionView.indexPathForItem(at: CGPoint(x: collectionView.contentOffset.x + collectionView.bounds.width/2, y: collectionView.bounds.height/2)) else {
-        self.presentError(des: "Please create at least one category.")
-        return
-      }
-      
-      modelController.set(category: categories![indexPath.row])
-      modelController.insertNewPayment()
-      
-    } else {
-      
-      print("not a correct format")
-      
+    modelController.set(value: val)
+    
+    guard let indexPath = collectionView.indexPathForItem(at: CGPoint(x: collectionView.contentOffset.x + collectionView.bounds.width/2, y: collectionView.bounds.height/2)) else {
+      self.presentError(des: "Please create at least one category.")
+      return
     }
+    
+    modelController.set(category: categories![indexPath.row])
+    modelController.insertNewPayment()
     
   }
   
